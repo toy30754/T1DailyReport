@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light">
+<title>P1Research 交易報告｜趨勢與量能雙重確認：NOW · CRNC · SNPS · MA · NRXS｜2026-10-16</title><meta name="description" content="全新格式：系統今天沒有任何 STRIKE，改用「趨勢 Cycle1/6 ＋ RVOL ≥1.2」兩道門檻從 220 檔篩出五檔，逐檔列出進場、失效價與目標。市場只剩 SPY 多頭、IWM 低於 288 降曝險線，總曝險上限 15–25%。附交易卡、計畫總表、市場天氣、系統原始計畫與財報時間軸。"><style>
+:root{--bg:#f4f6f8;--card:#fff;--ink:#13293d;--ink2:#3d5368;--muted:#6b7c8c;--line:#dde3ea;--navy:#0f2233;--accent:#1f7a55;--warn:#c08a12;--red:#b83d2c;--blue:#2f6db5}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.75 -apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans TC','Microsoft JhengHei',sans-serif}
+.wrap{width:min(1180px,calc(100% - 48px));margin:auto}a{color:inherit}
+.masthead{background:var(--navy);color:#e8eef4;padding:28px 0 40px}.back{color:#9fc3b4;font-size:13px;text-decoration:none}.back:hover{text-decoration:underline}
+.eyebrow{margin-top:26px;font:600 12px/1.4 ui-monospace,SFMono-Regular,monospace;letter-spacing:2px;color:#8fb3c9}
+h1{font-size:clamp(30px,4.6vw,52px);line-height:1.25;letter-spacing:-.5px;margin:14px 0 16px;color:#fff}
+.lede{max-width:760px;color:#c3d1dd;margin:0}.chips{display:flex;flex-wrap:wrap;gap:10px;margin:24px 0}
+.chips a{display:flex;align-items:center;gap:10px;padding:8px 16px 8px 8px;background:#18324a;border:1px solid #2b4a66;border-radius:999px;text-decoration:none;font-weight:700;letter-spacing:.5px;color:#fff}
+.chips a b{display:grid;place-items:center;width:26px;height:26px;border-radius:50%;background:#1f7a55;font-size:12px}.chips a:hover{border-color:#6fb59a}
+.verdict{background:#fff7e6;color:#4a3a12;border-left:4px solid var(--warn);padding:14px 18px;border-radius:6px;max-width:880px}
+.meta{margin-top:14px;font-size:12px;color:#8fa6b8}
+main{padding:12px 0 20px}section{margin:46px 0;scroll-margin-top:16px}
+.sec-h{display:flex;align-items:baseline;gap:14px;border-bottom:2px solid var(--ink);padding-bottom:8px;margin-bottom:16px}.sec-h span{font:700 14px ui-monospace,monospace;color:var(--accent)}.sec-h h2{margin:0;font-size:26px}
+.lede-s{color:var(--ink2);margin:12px 0}.foot-s{color:var(--muted);font-size:12.5px;margin:10px 0 0}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 18px 14px;margin:16px 0}.panel h3{margin:0 0 10px;font-size:16px}
+.panel svg{width:100%;height:auto;display:block}
+svg .lab{fill:var(--ink);font-size:14px;font-weight:650}svg .lab.sm{font-size:12.5px;font-weight:550}svg .lab.hl{fill:var(--accent);font-weight:800}
+svg .note{fill:var(--muted);font-size:13px}svg .fn{fill:var(--ink);font-size:20px;font-weight:800}svg .fn-hi{fill:#fff}
+svg .ax{fill:var(--muted);font-size:12px}svg .val{fill:var(--ink2);font-size:12.5px}svg .grid{stroke:#e6ebf0}svg .zero{stroke:#9aa8b5}
+svg .axisl{stroke:#c7d0d9;stroke-width:2}svg .flip{stroke:var(--blue);stroke-width:2;stroke-dasharray:4 3}
+svg .tk{font-size:12px;fill:var(--ink2)}svg .tk.b{font-weight:800;fill:var(--ink)}svg .tk.red{fill:var(--red)}svg .tk.green{fill:var(--accent);font-weight:700}svg .tk.blue{fill:var(--blue)}svg .tk.muted{fill:var(--muted)}
+svg .mark:hover rect,svg .mark:hover circle{filter:brightness(1.12)}
+.rules{padding-left:22px;margin:12px 0}.rules li{margin:6px 0}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(520px,1fr));gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;display:flex;flex-direction:column;gap:10px;scroll-margin-top:16px}
+.c-head{display:flex;align-items:center;gap:14px}.c-rank{display:grid;place-items:center;width:40px;height:40px;border-radius:10px;background:var(--navy);color:#fff;font-weight:800}
+.c-id{flex:1;min-width:0}.c-id h3{margin:0;font-size:24px;letter-spacing:.5px}.c-name{color:var(--muted);font-size:12.5px}
+.c-px{text-align:right}.c-px b{display:block;font-size:22px;font-variant-numeric:tabular-nums}.up{color:var(--accent);font-weight:700}.dn{color:var(--red);font-weight:700}
+.c-tags{display:flex;flex-wrap:wrap;gap:6px}.c-tags span{font-size:12px;padding:2px 10px;border-radius:999px;background:#eef3f6;color:var(--ink2)}.c-tags span:first-child{background:#e3f1ea;color:var(--accent);font-weight:700}
+.c-thesis,.c-risk{margin:0;font-size:14px}.c-risk{background:#fbf3f1;border-radius:8px;padding:8px 12px;color:#5a2a22}
+.c-ladder svg{width:100%;height:auto;display:block}
+.c-meters{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 18px}
+.meter .mlab{display:flex;justify-content:space-between;font-size:12.5px;color:var(--ink2)}.meter .mlab b{color:var(--ink);font-variant-numeric:tabular-nums}
+.mbar{position:relative;height:8px;border-radius:4px;background:#e9eef2;margin-top:3px}.mbar span{position:absolute;left:0;top:0;bottom:0;border-radius:4px}.mbar .thr{position:absolute;top:-3px;bottom:-3px;width:2px;background:var(--ink)}
+.mnote{font-size:11px;color:var(--muted)}
+.c-facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px 18px;margin:0;font-size:13px}.c-facts div{border-top:1px solid var(--line);padding-top:5px}
+.c-facts dt{color:var(--muted);font-size:11.5px}.c-facts dd{margin:0;font-variant-numeric:tabular-nums}
+.c-news{list-style:none;padding:0;margin:0;font-size:12.5px;color:var(--ink2)}.c-news li{padding:4px 0;border-top:1px dashed var(--line)}.c-news span{display:block;color:var(--muted);font-size:11.5px}
+.tw{overflow-x:auto;background:var(--card);border:1px solid var(--line);border-radius:12px;margin:16px 0}
+table{border-collapse:collapse;width:100%;min-width:760px;font-size:13px}th,td{padding:10px 12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+th{background:#eef2f6;font-size:12px;color:var(--ink2);white-space:nowrap}tr:last-child td{border-bottom:0}.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.tiles{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}.tile{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;border-top:4px solid var(--red)}
+.tile.ok{border-top-color:var(--accent)}.t-sym{font-weight:800;font-size:18px}.t-px{font-size:15px;font-variant-numeric:tabular-nums}.t-row{font-size:12.5px;color:var(--ink2)}.t-flag{margin-top:6px;font-size:12px;font-weight:700;color:var(--red)}.tile.ok .t-flag{color:var(--accent)}
+.two{display:grid;grid-template-columns:1fr;gap:0}
+.hot{list-style:none;margin:0;padding:0}.hot li{display:grid;grid-template-columns:70px 1fr auto;gap:8px;padding:7px 0;border-bottom:1px solid var(--line);font-size:13.5px}.hot span{color:var(--ink2)}.hot em{font-style:normal;color:var(--red);font-size:12px}.hot em.nil{color:var(--muted)}
+.inline{display:flex;flex-wrap:wrap;gap:8px 20px;list-style:none;padding:0;margin:6px 0;font-size:13.5px}
+.foot{border-top:1px solid var(--line);padding:18px 0 40px;color:var(--muted);font-size:12.5px}
+@media(max-width:820px){.wrap{width:calc(100% - 32px)}.cards{grid-template-columns:1fr}.tiles{grid-template-columns:repeat(2,minmax(0,1fr))}.two{grid-template-columns:1fr}.c-facts,.c-meters{grid-template-columns:1fr}.panel{padding:12px 10px}.sec-h h2{font-size:22px}}
+@media print{.masthead{background:#fff;color:var(--ink)}h1{color:var(--ink)}.lede,.meta{color:var(--ink2)}.chips a{background:#fff;color:var(--ink)}.card,.panel{break-inside:avoid}}
+</style></head><body>
+<header class="masthead"><div class="wrap">
+<a class="back" href="/">← 返回文章列表</a>
+<div class="eyebrow">P1RESEARCH · 交易報告 · 2026-10-16</div>
+<h1>趨勢與量能雙重確認<br>今天的五檔名單</h1>
+<p class="lede">資料截至 2026-10-15 美股收盤。今天系統沒有任何一檔 STRIKE，所以本報告不沿用固定模板，改用兩道硬門檻從 220 檔候選裡篩出五檔，並替每一檔列出進場條件、失效價與目標。</p>
+<div class="chips"><a href="#c-NOW"><b>1</b>NOW</a><a href="#c-CRNC"><b>2</b>CRNC</a><a href="#c-SNPS"><b>3</b>SNPS</a><a href="#c-MA"><b>4</b>MA</a><a href="#c-NRXS"><b>5</b>NRXS</a></div>
+<div class="verdict"><strong>今天的部位規模：偏小。</strong>只有 SPY 符合多頭條件，SPY + QQQ 淨 GEX −$3,420.6M，IWM 已低於 288 降曝險線。總曝險上限 15–25%，開盤前 15 分鐘不超過 15%。</div>
+<div class="meta">產生 2026-10-16 06:19 UTC／14:19 台灣／02:19 EDT · 美股開盤：10/16 美東 09:30（台灣 21:30）</div>
+</div></header>
+
+<main class="wrap">
+<section id="method"><div class="sec-h"><span>01</span><h2>篩選方法：兩道門檻</h2></div>
+<p class="lede-s">P1Research 把今天 220 檔候選中的 41 檔列為 STRIKE_WATCH（CE 多頭且收盤站上 VWAP），其餘都是成熟趨勢、不追。本報告再加兩道門檻，剛好剩下五檔：</p>
+<div class="panel"><svg viewBox="0 0 900 242" role="img" aria-label="篩選漏斗" xmlns="http://www.w3.org/2000/svg"><g class="mark"><title>全部候選：220 檔｜系統分析的所有標的</title><rect x="150.0" y="6" width="440.0" height="44" rx="6" fill="#dfe6e2"/></g><text x="370.0" y="34.0" text-anchor="middle" class="fn ">220</text><text x="135" y="33.0" text-anchor="end" class="lab">全部候選</text><text x="610" y="33.0" class="note">系統分析的所有標的</text><g class="mark"><title>非 CORE：41 檔｜CE 多頭且收盤站上 VWAP（STRIKE_WATCH）</title><rect x="275.0" y="64" width="189.9" height="44" rx="6" fill="#c9d6d0"/></g><text x="370.0" y="92.0" text-anchor="middle" class="fn ">41</text><text x="135" y="91.0" text-anchor="end" class="lab">非 CORE</text><text x="610" y="91.0" class="note">CE 多頭且收盤站上 VWAP（STRIKE_WATCH）</text><g class="mark"><title>趨勢確認：22 檔｜Cycle1 上升或 Cycle6 多頭起點</title><rect x="300.4" y="122" width="139.1" height="44" rx="6" fill="#c9d6d0"/></g><text x="370.0" y="150.0" text-anchor="middle" class="fn ">22</text><text x="135" y="149.0" text-anchor="end" class="lab">趨勢確認</text><text x="610" y="149.0" class="note">Cycle1 上升或 Cycle6 多頭起點</text><g class="mark"><title>量能確認：5 檔｜RVOL ≥ 1.2，且排除 ETF</title><rect x="336.8" y="180" width="66.3" height="44" rx="6" fill="#1f7a55"/></g><text x="370.0" y="208.0" text-anchor="middle" class="fn fn-hi">5</text><text x="135" y="207.0" text-anchor="end" class="lab">量能確認</text><text x="610" y="207.0" class="note">RVOL ≥ 1.2，且排除 ETF</text></svg></div>
+<ol class="rules">
+<li><b>趨勢門檻：</b>Cycle1（上升趨勢）或 Cycle6（多頭起點）。排除 Cycle4 下跌與 Cycle5 空頭尾聲，例如 SBUX、WFC、LMT。</li>
+<li><b>量能門檻：</b>10/15 的 RVOL ≥ 1.2，也就是系統進場條件中的量能標準，已經先達到。系統的 ZETA 只有 1.16，差一點沒過。</li>
+<li><b>排除 ETF：</b>SPY、IGV 等指數型標的不列入個股名單。</li>
+</ol>
+<p class="lede-s">排序依本報告判讀，綜合量能、趨勢穩定度、報酬／風險、波動與事件風險，不是系統分數。系統分數的順序是 NRXS 38.6 → CRNC 37.2 → NOW 35.8 → SNPS 34.5 → MA 32.5。</p>
+</section>
+
+<section id="cards"><div class="sec-h"><span>02</span><h2>五張交易卡</h2></div>
+<p class="lede-s">價位梯：深色圓點是 10/15 收盤，紅色是到失效價的距離，綠色是到目標的距離，藍色虛線是 GEX flip。NRXS、CRNC 用系統的停損與目標；NOW、SNPS、MA 不在系統計畫內，失效價用「收盤 − 1 ATR」，目標用收盤上方的前兩道 GEX 牆，這是本報告的規則。</p>
+<div class="cards"><article class="card" id="c-NOW">
+<header class="c-head"><div class="c-rank">1</div><div class="c-id"><h3>NOW</h3><div class="c-name">ServiceNow · NYSE:NOW</div></div>
+<div class="c-px"><b>148.57</b><span class="up">+6.14%</span></div></header>
+<div class="c-tags"><span>本報告篩選</span><span>C2 -&gt; C1</span><span>D9</span></div>
+<p class="c-thesis"><strong>為什麼入選：</strong>科技股走弱的一天逆勢 +6.1%，量能 1.66 倍是五檔中第二高，資金從半導體轉向企業軟體。收盤高於 GEX flip 142.1，處在正 gamma 區（+$67.3M），最大買權未平倉在 150，正好是第一道牆。</p>
+<div class="c-ladder"><svg viewBox="0 0 420 118" role="img" aria-label="NOW 價位梯" xmlns="http://www.w3.org/2000/svg"><line x1="16" y1="56" x2="404" y2="56" class="axisl"/><rect x="58.9" y="51" width="151.0" height="10" rx="3" fill="#b83d2c" opacity=".8"><title>失效價 142.57 → 收盤 148.57（−4.0%）</title></rect><rect x="209.9" y="51" width="161.8" height="10" rx="3" fill="#1f7a55"><title>收盤 → 目標 155（+4.3%）</title></rect><line x1="245.9" y1="47" x2="245.9" y2="65" stroke="#1f7a55" stroke-width="2"/><line x1="371.7" y1="47" x2="371.7" y2="65" stroke="#1f7a55" stroke-width="2"/><line x1="48.3" y1="44" x2="48.3" y2="68" class="flip"><title>GEX flip 142.1</title></line><circle cx="209.9" cy="56" r="6" fill="#13293d" stroke="#fff" stroke-width="2"><title>收盤 148.57</title></circle><text x="179.4" y="40" class="tk b">收 148.57</text><text x="22.4" y="84" class="tk red">失效 142.57</text><text x="224.9" y="84" class="tk green">T1 150</text><text x="350.7" y="84" class="tk green">T2 155</text><text x="13.3" y="40" class="tk blue">flip 142.1</text></svg></div>
+<div class="c-meters">
+<div class="meter"><div class="mlab"><span>RVOL</span><b>1.66</b></div><div class="mbar"><span style="width:55.3%;background:#1f7a55"></span><i class="thr" style="left:40.0%"></i></div><div class=mnote>門檻 1.2</div></div>
+<div class="meter"><div class="mlab"><span>收盤高於 VWAP</span><b>+1.42%</b></div><div class="mbar"><span style="width:35.5%;background:#1f7a55"></span></div></div>
+<div class="meter"><div class="mlab"><span>RSI14</span><b>65.4</b></div><div class="mbar"><span style="width:65.4%;background:#1f7a55"></span><i class="thr" style="left:70.0%"></i></div><div class=mnote>70 以上過熱</div></div>
+<div class="meter"><div class="mlab"><span>ATR</span><b>4.04%</b></div><div class="mbar"><span style="width:50.5%;background:#1f7a55"></span></div></div>
+</div>
+<dl class="c-facts">
+<div><dt>進場條件</dt><dd>&gt;148.57，且站上當日 VWAP、RVOL ≥1.2</dd></div>
+<div><dt>失效價（本報告規則）</dt><dd>142.57（−4.0%）</dd></div>
+<div><dt>目標</dt><dd>150 / 155（+4.3%，報酬／風險 1.07）</dd></div>
+<div><dt>GEX</dt><dd>+$67.3M，flip 142.1，牆 150 / 155 / 160</dd></div>
+<div><dt>期權</dt><dd>P/C 未平倉 0.62，最大買權 150、最大賣權 120，ATM IV 59.2%</dd></div>
+<div><dt>分析師</dt><dd>平均 151.54（+2.0%），中位數 157.50（+6.0%）；近一個月 7 筆平均 170.71</dd></div>
+<div><dt>下次財報</dt><dd>2026-10-28</dd></div>
+<div><dt>板塊</dt><dd>ENTERPRISE SOFTWARE &amp; CYBERSECURITY（趨勢 +27.3）</dd></div>
+</dl>
+<p class="c-risk"><strong>風險：</strong>10/28 公布財報，只剩約 8 個交易日；分析師平均目標 151.54 只比收盤高 2%（但近一個月 7 筆平均 170.71）。</p>
+<ul class="c-news"><li>ServiceNow stock rises 6% as investors rotate to enterprise software stocks<span>Invezz · 10/15</span></li><li>3 Reasons ServiceNow Stock Is Climbing When Tech Is Selling Off<span>Barrons · 10/15</span></li><li>ServiceNow Climbs 5% After Denying Decagon Acquisition Interest<span>24/7 Wall Street · 10/15</span></li></ul>
+</article><article class="card" id="c-CRNC">
+<header class="c-head"><div class="c-rank">2</div><div class="c-id"><h3>CRNC</h3><div class="c-name">Cerence AI · NASDAQ:CRNC</div></div>
+<div class="c-px"><b>9.17</b><span class="up">+5.22%</span></div></header>
+<div class="c-tags"><span>系統條件式交易</span><span>C5 -&gt; C6</span><span>D4</span></div>
+<p class="c-thesis"><strong>為什麼入選：</strong>系統三檔條件式交易之一。Bull Entry 第 4 天、CE 多頭 6 日，收盤高於 VWAP 2.0%，尾盤量佔 37.1%（五檔最高），代表收盤前有人持續買。系統停損 8.42、目標 10 / 11，報酬／風險 2.4，是五檔中最好的。</p>
+<div class="c-ladder"><svg viewBox="0 0 420 118" role="img" aria-label="CRNC 價位梯" xmlns="http://www.w3.org/2000/svg"><line x1="16" y1="56" x2="404" y2="56" class="axisl"/><rect x="92.1" y="51" width="81.3" height="10" rx="3" fill="#b83d2c" opacity=".8"><title>失效價 8.42 → 收盤 9.17（−8.2%）</title></rect><rect x="173.4" y="51" width="198.3" height="10" rx="3" fill="#1f7a55"><title>收盤 → 目標 11（+20.0%）</title></rect><line x1="263.3" y1="47" x2="263.3" y2="65" stroke="#1f7a55" stroke-width="2"/><line x1="371.7" y1="47" x2="371.7" y2="65" stroke="#1f7a55" stroke-width="2"/><line x1="48.3" y1="44" x2="48.3" y2="68" class="flip"><title>GEX flip 8.0</title></line><circle cx="173.4" cy="56" r="6" fill="#13293d" stroke="#fff" stroke-width="2"><title>收盤 9.17</title></circle><text x="149.9" y="40" class="tk b">收 9.17</text><text x="62.6" y="84" class="tk red">失效 8.42</text><text x="245.8" y="84" class="tk green">T1 10</text><text x="354.2" y="84" class="tk green">T2 11</text><text x="20.3" y="40" class="tk blue">flip 8.0</text></svg></div>
+<div class="c-meters">
+<div class="meter"><div class="mlab"><span>RVOL</span><b>1.31</b></div><div class="mbar"><span style="width:43.7%;background:#1f7a55"></span><i class="thr" style="left:40.0%"></i></div><div class=mnote>門檻 1.2</div></div>
+<div class="meter"><div class="mlab"><span>收盤高於 VWAP</span><b>+2.02%</b></div><div class="mbar"><span style="width:50.5%;background:#1f7a55"></span></div></div>
+<div class="meter"><div class="mlab"><span>RSI14</span><b>66.4</b></div><div class="mbar"><span style="width:66.4%;background:#1f7a55"></span><i class="thr" style="left:70.0%"></i></div><div class=mnote>70 以上過熱</div></div>
+<div class="meter"><div class="mlab"><span>ATR</span><b>4.74%</b></div><div class="mbar"><span style="width:59.2%;background:#1f7a55"></span></div></div>
+</div>
+<dl class="c-facts">
+<div><dt>進場條件</dt><dd>&gt;9.17，且站上當日 VWAP、RVOL ≥1.2</dd></div>
+<div><dt>失效價（系統）</dt><dd>8.42（−8.2%）</dd></div>
+<div><dt>目標</dt><dd>10 / 11（+20.0%，報酬／風險 2.44）</dd></div>
+<div><dt>GEX</dt><dd>+$0.1M，flip 8.0，牆 10 / 11</dd></div>
+<div><dt>期權</dt><dd>P/C 未平倉 0.51，最大買權 9、最大賣權 10，ATM IV 77.9%</dd></div>
+<div><dt>分析師</dt><dd>平均 23.38（+155.0%），中位數 11.50（+25.4%）</dd></div>
+<div><dt>下次財報</dt><dd>2026-11-18</dd></div>
+<div><dt>板塊</dt><dd>未列入 P1 追蹤板塊</dd></div>
+</dl>
+<p class="c-risk"><strong>風險：</strong>9 美元小型股，單日成交約 96 萬股；分析師只有零星幾位，平均目標 23.38 被一個 76 的極端值拉高，中位數 11.5 比較有參考性。</p>
+<ul class="c-news"><li>Cerence AI and Geely Advance Human-Machine Interaction Through Robotics Technology Services Partnership<span>GlobeNewsWire · 10/15</span></li><li>Cerence AI&#x27;s Mobile Work Agent Selected as Automotive Cybersecurity Innovation of the Year<span>GlobeNewsWire · 10/15</span></li></ul>
+</article><article class="card" id="c-SNPS">
+<header class="c-head"><div class="c-rank">3</div><div class="c-id"><h3>SNPS</h3><div class="c-name">Synopsys · NASDAQ:SNPS</div></div>
+<div class="c-px"><b>468.11</b><span class="dn">−2.46%</span></div></header>
+<div class="c-tags"><span>本報告篩選</span><span>C6 -&gt; C1</span><span>D11</span></div>
+<p class="c-thesis"><strong>為什麼入選：</strong>Cycle1 第 11 天、CE 多頭 19 日，趨勢最穩。10/15 雖收跌 2.5%，仍站上當日 VWAP 0.8%、量能 1.22 倍。新聞面有 10 億美元加速回購與分析師上調目標，平均目標 575.93，比收盤高 23%。RSI 54.8 不過熱。</p>
+<div class="c-ladder"><svg viewBox="0 0 420 118" role="img" aria-label="SNPS 價位梯" xmlns="http://www.w3.org/2000/svg"><line x1="16" y1="56" x2="404" y2="56" class="axisl"/><rect x="48.3" y="51" width="157.4" height="10" rx="3" fill="#b83d2c" opacity=".8"><title>失效價 449.71 → 收盤 468.11（−3.9%）</title></rect><rect x="205.8" y="51" width="165.9" height="10" rx="3" fill="#1f7a55"><title>收盤 → 目標 487.5（+4.1%）</title></rect><line x1="307.5" y1="47" x2="307.5" y2="65" stroke="#1f7a55" stroke-width="2"/><line x1="371.7" y1="47" x2="371.7" y2="65" stroke="#1f7a55" stroke-width="2"/><line x1="363.6" y1="44" x2="363.6" y2="68" class="flip"><title>GEX flip 486.6</title></line><circle cx="205.8" cy="56" r="6" fill="#13293d" stroke="#fff" stroke-width="2"><title>收盤 468.11</title></circle><text x="175.3" y="40" class="tk b">收 468.11</text><text x="11.8" y="84" class="tk red">失效 449.71</text><text x="286.5" y="84" class="tk green">T1 480</text><text x="343.7" y="84" class="tk green">T2 487.5</text><text x="328.6" y="40" class="tk blue">flip 486.6</text></svg></div>
+<div class="c-meters">
+<div class="meter"><div class="mlab"><span>RVOL</span><b>1.22</b></div><div class="mbar"><span style="width:40.7%;background:#1f7a55"></span><i class="thr" style="left:40.0%"></i></div><div class=mnote>門檻 1.2</div></div>
+<div class="meter"><div class="mlab"><span>收盤高於 VWAP</span><b>+0.80%</b></div><div class="mbar"><span style="width:20.0%;background:#1f7a55"></span></div></div>
+<div class="meter"><div class="mlab"><span>RSI14</span><b>54.8</b></div><div class="mbar"><span style="width:54.8%;background:#1f7a55"></span><i class="thr" style="left:70.0%"></i></div><div class=mnote>70 以上過熱</div></div>
+<div class="meter"><div class="mlab"><span>ATR</span><b>3.93%</b></div><div class="mbar"><span style="width:49.1%;background:#1f7a55"></span></div></div>
+</div>
+<dl class="c-facts">
+<div><dt>進場條件</dt><dd>&gt;468.11，且站上當日 VWAP、RVOL ≥1.2</dd></div>
+<div><dt>失效價（本報告規則）</dt><dd>449.71（−3.9%）</dd></div>
+<div><dt>目標</dt><dd>480 / 487.5（+4.1%，報酬／風險 1.05）</dd></div>
+<div><dt>GEX</dt><dd>+$5.1M，flip 486.6，牆 480 / 487.5 / 500</dd></div>
+<div><dt>期權</dt><dd>P/C 未平倉 0.49，最大買權 450、最大賣權 480，ATM IV 39.6%</dd></div>
+<div><dt>分析師</dt><dd>平均 575.93（+23.0%），中位數 572.50（+22.3%）；近一個月 6 筆平均 587.50</dd></div>
+<div><dt>下次財報</dt><dd>2026-12-09</dd></div>
+<div><dt>板塊</dt><dd>未列入 P1 追蹤板塊</dd></div>
+</dl>
+<p class="c-risk"><strong>風險：</strong>收盤 468.11 在 GEX flip 486.6 之下，屬負 gamma 區，波動可能放大；半導體整體偏弱（SOXX 處於 Bear Entry）。</p>
+<ul class="c-news"><li>Synopsys Signals Confidence With $1B Accelerated Buyback, Analysts Raise Targets<span>MarketBeat · 10/15</span></li><li>Can Synopsys&#x27; AI-Focused Design IP Strategy Drive Growth?<span>Zacks Investment Research · 10/15</span></li></ul>
+</article><article class="card" id="c-MA">
+<header class="c-head"><div class="c-rank">4</div><div class="c-id"><h3>MA</h3><div class="c-name">Mastercard · NYSE:MA</div></div>
+<div class="c-px"><b>616.32</b><span class="up">+2.17%</span></div></header>
+<div class="c-tags"><span>本報告篩選</span><span>C3 -&gt; C1</span><span>D6</span></div>
+<p class="c-thesis"><strong>為什麼入選：</strong>五檔中波動最低（ATR 1.67%、HV20 19.6%），適合當防守部位。量能 1.39 倍，收盤高於 GEX flip 598.0，正 gamma +$59.4M；分析師平均目標 672.67，還有 9% 空間。</p>
+<div class="c-ladder"><svg viewBox="0 0 420 118" role="img" aria-label="MA 價位梯" xmlns="http://www.w3.org/2000/svg"><line x1="16" y1="56" x2="404" y2="56" class="axisl"/><rect x="154.5" y="51" width="135.7" height="10" rx="3" fill="#b83d2c" opacity=".8"><title>失效價 606.03 → 收盤 616.32（−1.7%）</title></rect><rect x="290.2" y="51" width="81.5" height="10" rx="3" fill="#1f7a55"><title>收盤 → 目標 622.5（+1.0%）</title></rect><line x1="338.7" y1="47" x2="338.7" y2="65" stroke="#1f7a55" stroke-width="2"/><line x1="371.7" y1="47" x2="371.7" y2="65" stroke="#1f7a55" stroke-width="2"/><line x1="48.3" y1="44" x2="48.3" y2="68" class="flip"><title>GEX flip 598.0</title></line><circle cx="290.2" cy="56" r="6" fill="#13293d" stroke="#fff" stroke-width="2"><title>收盤 616.32</title></circle><text x="259.7" y="40" class="tk b">收 616.32</text><text x="118.0" y="84" class="tk red">失效 606.03</text><text x="317.7" y="84" class="tk green">T1 620</text><text x="343.7" y="40" class="tk green">T2 622.5</text><text x="13.3" y="84" class="tk blue">flip 598.0</text></svg></div>
+<div class="c-meters">
+<div class="meter"><div class="mlab"><span>RVOL</span><b>1.39</b></div><div class="mbar"><span style="width:46.3%;background:#1f7a55"></span><i class="thr" style="left:40.0%"></i></div><div class=mnote>門檻 1.2</div></div>
+<div class="meter"><div class="mlab"><span>收盤高於 VWAP</span><b>+0.21%</b></div><div class="mbar"><span style="width:5.2%;background:#1f7a55"></span></div></div>
+<div class="meter"><div class="mlab"><span>RSI14</span><b>74.7</b></div><div class="mbar"><span style="width:74.7%;background:#c08a12"></span><i class="thr" style="left:70.0%"></i></div><div class=mnote>70 以上過熱</div></div>
+<div class="meter"><div class="mlab"><span>ATR</span><b>1.67%</b></div><div class="mbar"><span style="width:20.9%;background:#1f7a55"></span></div></div>
+</div>
+<dl class="c-facts">
+<div><dt>進場條件</dt><dd>&gt;616.32，且站上當日 VWAP、RVOL ≥1.2</dd></div>
+<div><dt>失效價（本報告規則）</dt><dd>606.03（−1.7%）</dd></div>
+<div><dt>目標</dt><dd>620 / 622.5（+1.0%，報酬／風險 0.60）</dd></div>
+<div><dt>GEX</dt><dd>+$59.4M，flip 598.0，牆 620 / 622.5 / 625</dd></div>
+<div><dt>期權</dt><dd>P/C 未平倉 1.02，最大買權 600、最大賣權 560，ATM IV 34.2%</dd></div>
+<div><dt>分析師</dt><dd>平均 672.67（+9.1%），中位數 670.00（+8.7%）；近一個月 2 筆平均 687.50</dd></div>
+<div><dt>下次財報</dt><dd>2026-10-29</dd></div>
+<div><dt>板塊</dt><dd>未列入 P1 追蹤板塊</dd></div>
+</dl>
+<p class="c-risk"><strong>風險：</strong>RSI 74.7 已過熱（系統標示 overbought）；GEX 牆 620 / 622.5 / 625 擠在收盤上方 1% 內，短線空間小，本報告規則下的報酬／風險只有 0.6；10/29 公布財報。</p>
+<ul class="c-news"><li>Why MasterCard (MA) Outpaced the Stock Market Today<span>Zacks Investment Research · 10/15</span></li><li>Is It Worth Investing in MasterCard (MA) Based on Wall Street&#x27;s Bullish Views?<span>Zacks Investment Research · 10/15</span></li></ul>
+</article><article class="card" id="c-NRXS">
+<header class="c-head"><div class="c-rank">5</div><div class="c-id"><h3>NRXS</h3><div class="c-name">NeurAxis · AMEX:NRXS</div></div>
+<div class="c-px"><b>7.74</b><span class="up">+18.53%</span></div></header>
+<div class="c-tags"><span>系統條件式交易</span><span>C3 -&gt; C1</span><span>D1</span></div>
+<p class="c-thesis"><strong>為什麼入選：</strong>系統三檔條件式交易之一，也是今天分數最高的非 CORE 標的（38.6）。醫療器材公司宣布保險給付涵蓋再增加 2,600 萬人，當天 +18.5%、量能 9.6 倍（系統標示 volume spike）、收盤高於 VWAP 3.4%。</p>
+<div class="c-ladder"><svg viewBox="0 0 420 118" role="img" aria-label="NRXS 價位梯" xmlns="http://www.w3.org/2000/svg"><line x1="16" y1="56" x2="404" y2="56" class="axisl"/><rect x="48.3" y="51" width="323.3" height="10" rx="3" fill="#b83d2c" opacity=".8"><title>失效價 6.97 → 收盤 7.74（−9.9%）</title></rect><circle cx="371.7" cy="56" r="6" fill="#13293d" stroke="#fff" stroke-width="2"><title>收盤 7.74</title></circle><text x="348.2" y="40" class="tk b">收 7.74</text><text x="18.8" y="84" class="tk red">失效 6.97</text><text x="404" y="22" text-anchor="end" class="tk muted">系統未給目標</text></svg></div>
+<div class="c-meters">
+<div class="meter"><div class="mlab"><span>RVOL</span><b>9.59</b></div><div class="mbar"><span style="width:100.0%;background:#1f7a55"></span><i class="thr" style="left:12.5%"></i></div><div class=mnote>門檻 1.2</div></div>
+<div class="meter"><div class="mlab"><span>收盤高於 VWAP</span><b>+3.36%</b></div><div class="mbar"><span style="width:84.0%;background:#1f7a55"></span></div></div>
+<div class="meter"><div class="mlab"><span>RSI14</span><b>62.7</b></div><div class="mbar"><span style="width:62.7%;background:#1f7a55"></span><i class="thr" style="left:70.0%"></i></div><div class=mnote>70 以上過熱</div></div>
+<div class="meter"><div class="mlab"><span>ATR</span><b>6.95%</b></div><div class="mbar"><span style="width:86.9%;background:#1f7a55"></span></div></div>
+</div>
+<dl class="c-facts">
+<div><dt>進場條件</dt><dd>&gt;7.74，且站上當日 VWAP、RVOL ≥1.2</dd></div>
+<div><dt>失效價（系統）</dt><dd>6.97（−9.9%）</dd></div>
+<div><dt>目標</dt><dd>—</dd></div>
+<div><dt>GEX</dt><dd>+$0.0M，牆 —</dd></div>
+<div><dt>期權</dt><dd>P/C 未平倉 0.17，最大買權 7.5、最大賣權 7.5，ATM IV 74.2%</dd></div>
+<div><dt>分析師</dt><dd>平均 8.00（+3.4%），中位數 8.00（+3.4%）</dd></div>
+<div><dt>下次財報</dt><dd>2026-11-09</dd></div>
+<div><dt>板塊</dt><dd>未列入 P1 追蹤板塊</dd></div>
+</dl>
+<p class="c-risk"><strong>風險：</strong>C3→C1 才第 1 天、CE 剛轉多 1 日；7.74 美元小型股，期權未平倉極少（買權 142 口、賣權 24 口），沒有可用的 GEX 牆；系統沒給目標價，只有 1 位分析師、目標 8（+3.4%）。屬事件驅動，只適合極小部位。</p>
+<ul class="c-news"><li>NeurAxis Announces Medical Policy Coverage Milestone, Expanding Access to 26 Million Additional Covered Lives<span>GlobeNewsWire · 10/15</span></li></ul>
+</article></div>
+</section>
+
+<section id="plan"><div class="sec-h"><span>03</span><h2>計畫總表</h2></div>
+<div class="panel"><svg viewBox="0 0 900 270" role="img" aria-label="五檔失效價與目標距離" xmlns="http://www.w3.org/2000/svg"><line x1="110.6" y1="8" x2="110.6" y2="240" class="grid"/><text x="110.6" y="258" text-anchor="middle" class="ax">−10%</text><line x1="213.8" y1="8" x2="213.8" y2="240" class="grid"/><text x="213.8" y="258" text-anchor="middle" class="ax">−5%</text><line x1="316.9" y1="8" x2="316.9" y2="240" class="grid"/><text x="316.9" y="258" text-anchor="middle" class="ax">0%</text><line x1="420.0" y1="8" x2="420.0" y2="240" class="grid"/><text x="420.0" y="258" text-anchor="middle" class="ax">+5%</text><line x1="523.1" y1="8" x2="523.1" y2="240" class="grid"/><text x="523.1" y="258" text-anchor="middle" class="ax">+10%</text><line x1="626.2" y1="8" x2="626.2" y2="240" class="grid"/><text x="626.2" y="258" text-anchor="middle" class="ax">+15%</text><line x1="729.4" y1="8" x2="729.4" y2="240" class="grid"/><text x="729.4" y="258" text-anchor="middle" class="ax">+20%</text><line x1="316.9" y1="8" x2="316.9" y2="240" class="zero"/><text x="78" y="32.0" text-anchor="end" class="lab">NOW</text><g class="mark"><title>NOW 失效價距離 −4.0%</title><rect x="233.6" y="19.0" width="83.3" height="16" rx="4" fill="#b83d2c" opacity=".85"/></g><g class="mark"><title>NOW 最遠目標 +4.3%</title><rect x="318.9" y="19.0" width="87.3" height="16" rx="4" fill="#1f7a55"/></g><text x="414.1" y="32.0" class="val">報酬／風險 1.07（本報告規則）</text><text x="78" y="78.0" text-anchor="end" class="lab">CRNC</text><g class="mark"><title>CRNC 失效價距離 −8.2%</title><rect x="148.2" y="65.0" width="168.7" height="16" rx="4" fill="#b83d2c" opacity=".85"/></g><g class="mark"><title>CRNC 最遠目標 +20.0%</title><rect x="318.9" y="65.0" width="409.6" height="16" rx="4" fill="#1f7a55"/></g><text x="736.5" y="78.0" class="val">報酬／風險 2.44（系統）</text><text x="78" y="124.0" text-anchor="end" class="lab">SNPS</text><g class="mark"><title>SNPS 失效價距離 −3.9%</title><rect x="235.8" y="111.0" width="81.1" height="16" rx="4" fill="#b83d2c" opacity=".85"/></g><g class="mark"><title>SNPS 最遠目標 +4.1%</title><rect x="318.9" y="111.0" width="83.4" height="16" rx="4" fill="#1f7a55"/></g><text x="410.3" y="124.0" class="val">報酬／風險 1.05（本報告規則）</text><text x="78" y="170.0" text-anchor="end" class="lab">MA</text><g class="mark"><title>MA 失效價距離 −1.7%</title><rect x="282.4" y="157.0" width="34.4" height="16" rx="4" fill="#b83d2c" opacity=".85"/></g><g class="mark"><title>MA 最遠目標 +1.0%</title><rect x="318.9" y="157.0" width="18.7" height="16" rx="4" fill="#1f7a55"/></g><text x="345.6" y="170.0" class="val">報酬／風險 0.60（本報告規則）</text><text x="78" y="216.0" text-anchor="end" class="lab">NRXS</text><g class="mark"><title>NRXS 失效價距離 −9.9%</title><rect x="111.7" y="203.0" width="205.2" height="16" rx="4" fill="#b83d2c" opacity=".85"/></g><text x="324.9" y="216.0" class="val">無目標價（系統）</text></svg></div>
+<div class="tw"><table><thead><tr><th>標的</th><th>價位來源</th><th>進場條件</th><th class="num">失效價</th><th class="num">目標</th><th class="num">失效距離</th><th class="num">目標距離</th><th class="num">報酬／風險</th><th class="num">部位上限</th></tr></thead><tbody><tr><td><b>NOW</b></td><td>本報告規則</td><td>&gt;148.57，且站上當日 VWAP、RVOL ≥1.2</td><td class="num">142.57</td><td class="num">150 / 155</td><td class="num">−4.0%</td><td class="num">+4.3%</td><td class="num">1.07</td><td class="num">5.0–7.4%</td></tr><tr><td><b>CRNC</b></td><td>系統</td><td>&gt;9.17，且站上當日 VWAP、RVOL ≥1.2</td><td class="num">8.42</td><td class="num">10 / 11</td><td class="num">−8.2%</td><td class="num">+20.0%</td><td class="num">2.44</td><td class="num">2.4–3.7%</td></tr><tr><td><b>SNPS</b></td><td>本報告規則</td><td>&gt;468.11，且站上當日 VWAP、RVOL ≥1.2</td><td class="num">449.71</td><td class="num">480 / 487.5</td><td class="num">−3.9%</td><td class="num">+4.1%</td><td class="num">1.05</td><td class="num">5.1–7.6%</td></tr><tr><td><b>MA</b></td><td>本報告規則</td><td>&gt;616.32，且站上當日 VWAP、RVOL ≥1.2</td><td class="num">606.03</td><td class="num">620 / 622.5</td><td class="num">−1.7%</td><td class="num">+1.0%</td><td class="num">0.60</td><td class="num">12.0–18.0%</td></tr><tr><td><b>NRXS</b></td><td>系統</td><td>&gt;7.74，且站上當日 VWAP、RVOL ≥1.2</td><td class="num">6.97</td><td class="num">—</td><td class="num">−9.9%</td><td class="num">—</td><td class="num">—</td><td class="num">2.0–3.0%</td></tr></tbody></table></div>
+<p class="foot-s">部位上限＝單檔風險 0.2–0.3% ÷ 失效距離，是佔帳戶淨值的比例；五檔合計仍受總曝險上限約束。MA 失效距離小，換算出的部位大，但報酬／風險只有 0.60，不建議用滿。</p>
+</section>
+
+<section id="market"><div class="sec-h"><span>04</span><h2>市場天氣</h2></div>
+<div class="tiles"><div class="tile ok"><div class="t-sym">SPY</div><div class="t-px">771.77 <span class="up">+0.28%</span></div><div class="t-row">Uptrend · CE 多</div><div class="t-row">Net GEX +$79.2M</div><div class="t-flag">多頭條件成立</div></div><div class="tile bad"><div class="t-sym">QQQ</div><div class="t-px">728.00 <span class="dn">−0.13%</span></div><div class="t-row">Bull End · CE 空</div><div class="t-row">Net GEX −$3,499.8M</div><div class="t-flag">待確認</div></div><div class="tile bad"><div class="t-sym">IWM</div><div class="t-px">275.05 <span class="up">+1.36%</span></div><div class="t-row">Downtrend · CE 空</div><div class="t-row">Net GEX −$2,417.3M</div><div class="t-flag">待確認</div></div><div class="tile bad"><div class="t-sym">SOXX</div><div class="t-px">514.83 <span class="dn">−0.88%</span></div><div class="t-row">Bear Entry · CE 空</div><div class="t-row">Net GEX −$247.0M</div><div class="t-flag">待確認</div></div></div>
+<p class="lede-s"><b>降曝險條件：</b>SPY 771.77（門檻 765，高於 +0.9%）；QQQ 728.00（門檻 710，高於 +2.5%）；IWM 275.05（門檻 288，已低於）。SPY 離 765 不到 1%，跌破就是第二條觸發。</p>
+<div class="two">
+<div class="panel"><h3>板塊趨勢強度</h3><svg viewBox="0 0 900 606" role="img" aria-label="板塊趨勢強度" xmlns="http://www.w3.org/2000/svg"><line x1="290.0" y1="4" x2="290.0" y2="580" class="grid"/><text x="290.0" y="598" text-anchor="middle" class="ax">-100</text><line x1="427.5" y1="4" x2="427.5" y2="580" class="grid"/><text x="427.5" y="598" text-anchor="middle" class="ax">-50</text><line x1="565.0" y1="4" x2="565.0" y2="580" class="zero"/><text x="565.0" y="598" text-anchor="middle" class="ax">0</text><line x1="702.5" y1="4" x2="702.5" y2="580" class="grid"/><text x="702.5" y="598" text-anchor="middle" class="ax">50</text><line x1="840.0" y1="4" x2="840.0" y2="580" class="grid"/><text x="840.0" y="598" text-anchor="middle" class="ax">100</text><text x="280" y="21.0" text-anchor="end" class="lab sm">AI PLATFORMS &amp; INTERNET</text><g class="mark"><title>AI PLATFORMS &amp; INTERNET｜趨勢強度 45.5｜新觸發 36.4%｜成交額 $33.3B</title><rect x="565.0" y="9" width="125.1" height="16" rx="3" fill="#1f7a55"/></g><text x="696.1" y="21.0" text-anchor="start" class="val">45.5</text><text x="280" y="47.0" text-anchor="end" class="lab sm">FINTECH</text><g class="mark"><title>FINTECH｜趨勢強度 42.9｜新觸發 28.6%｜成交額 $8.9B</title><rect x="565.0" y="35" width="118.0" height="16" rx="3" fill="#1f7a55"/></g><text x="689.0" y="47.0" text-anchor="start" class="val">42.9</text><text x="280" y="73.0" text-anchor="end" class="lab sm">HEALTHCARE &amp; BIOTECH</text><g class="mark"><title>HEALTHCARE &amp; BIOTECH｜趨勢強度 30｜新觸發 15%｜成交額 $32.3B</title><rect x="565.0" y="61" width="82.5" height="16" rx="3" fill="#1f7a55"/></g><text x="653.5" y="73.0" text-anchor="start" class="val">30</text><text x="280" y="99.0" text-anchor="end" class="lab sm hl">ENTERPRISE SOFTWARE &amp; CYBERSECURITY</text><g class="mark"><title>ENTERPRISE SOFTWARE &amp; CYBERSECURITY｜趨勢強度 27.3｜新觸發 22.7%｜成交額 $31.9B</title><rect x="565.0" y="87" width="75.1" height="16" rx="3" fill="#1f7a55"/></g><text x="646.1" y="99.0" text-anchor="start" class="val">27.3</text><text x="280" y="125.0" text-anchor="end" class="lab sm">CHINA TECH</text><g class="mark"><title>CHINA TECH｜趨勢強度 25｜新觸發 25%｜成交額 $2.2B</title><rect x="565.0" y="113" width="68.8" height="16" rx="3" fill="#1f7a55"/></g><text x="639.8" y="125.0" text-anchor="start" class="val">25</text><text x="280" y="151.0" text-anchor="end" class="lab sm">GAMING &amp; DIGITAL MEDIA</text><g class="mark"><title>GAMING &amp; DIGITAL MEDIA｜趨勢強度 18.2｜新觸發 27.3%｜成交額 $6.7B</title><rect x="565.0" y="139" width="50.0" height="16" rx="3" fill="#1f7a55"/></g><text x="621.0" y="151.0" text-anchor="start" class="val">18.2</text><text x="280" y="177.0" text-anchor="end" class="lab sm">DEFENSE &amp; DRONES</text><g class="mark"><title>DEFENSE &amp; DRONES｜趨勢強度 -20｜新觸發 0%｜成交額 $9.2B</title><rect x="510.0" y="165" width="55.0" height="16" rx="3" fill="#b83d2c"/></g><text x="571.0" y="177.0" text-anchor="start" class="val">-20</text><text x="280" y="203.0" text-anchor="end" class="lab sm">POWER &amp; GRID</text><g class="mark"><title>POWER &amp; GRID｜趨勢強度 -28｜新觸發 36%｜成交額 $18.2B</title><rect x="488.0" y="191" width="77.0" height="16" rx="3" fill="#b83d2c"/></g><text x="571.0" y="203.0" text-anchor="start" class="val">-28</text><text x="280" y="229.0" text-anchor="end" class="lab sm">ROBOTICS &amp; INDUSTRIAL AUTOMATION</text><g class="mark"><title>ROBOTICS &amp; INDUSTRIAL AUTOMATION｜趨勢強度 -42.9｜新觸發 10.7%｜成交額 $13.3B</title><rect x="447.0" y="217" width="118.0" height="16" rx="3" fill="#b83d2c"/></g><text x="571.0" y="229.0" text-anchor="start" class="val">-42.9</text><text x="280" y="255.0" text-anchor="end" class="lab sm">METALS &amp; MINING</text><g class="mark"><title>METALS &amp; MINING｜趨勢強度 -46.7｜新觸發 0%｜成交額 $6.3B</title><rect x="436.6" y="243" width="128.4" height="16" rx="3" fill="#b83d2c"/></g><text x="571.0" y="255.0" text-anchor="start" class="val">-46.7</text><text x="280" y="281.0" text-anchor="end" class="lab sm">SPORTS BETTING</text><g class="mark"><title>SPORTS BETTING｜趨勢強度 -60｜新觸發 0%｜成交額 $594.9M</title><rect x="400.0" y="269" width="165.0" height="16" rx="3" fill="#b83d2c"/></g><text x="571.0" y="281.0" text-anchor="start" class="val">-60</text><text x="280" y="307.0" text-anchor="end" class="lab sm">SPACE &amp; eVTOL</text><g class="mark"><title>SPACE &amp; eVTOL｜趨勢強度 -90.9｜新觸發 0%｜成交額 $16.6B</title><rect x="315.0" y="295" width="250.0" height="16" rx="3" fill="#b83d2c"/></g><text x="571.0" y="307.0" text-anchor="start" class="val">-90.9</text><text x="280" y="333.0" text-anchor="end" class="lab sm">AI COMPUTE &amp; SEMIS</text><g class="mark"><title>AI COMPUTE &amp; SEMIS｜趨勢強度 -92｜新觸發 8%｜成交額 $69.1B</title><rect x="312.0" y="321" width="253.0" height="16" rx="3" fill="#b83d2c"/></g><text x="571.0" y="333.0" text-anchor="start" class="val">-92</text><text x="280" y="359.0" text-anchor="end" class="lab sm">MEMORY &amp; STORAGE</text><g class="mark"><title>MEMORY &amp; STORAGE｜趨勢強度 -100｜新觸發 0%｜成交額 $57.9B</title><rect x="290.0" y="347" width="275.0" height="16" rx="3" fill="#b83d2c"/></g><text x="571.0" y="359.0" text-anchor="start" class="val">-100</text><text x="280" y="385.0" text-anchor="end" class="lab sm">NETWORKING &amp; INTERCONNECT</text><g class="mark"><title>NETWORKING &amp; INTERCONNECT｜趨勢強度 -100｜新觸發 10%｜成交額 $20.6B</title><rect x="290.0" y="373" width="275.0" height="16" rx="3" fill="#b83d2c"/></g><text x="571.0" y="385.0" text-anchor="start" class="val">-100</text><text x="280" y="411.0" text-anchor="end" class="lab sm">OPTICAL NETWORKING &amp; PHOTONICS</text><g class="mark"><title>OPTICAL NETWORKING &amp; PHOTONICS｜趨勢強度 -100｜新觸發 0%｜成交額 $12.0B</title><rect x="290.0" y="399" width="275.0" height="16" rx="3" fill="#b83d2c"/></g><text x="571.0" y="411.0" text-anchor="start" class="val">-100</text><text x="280" y="437.0" text-anchor="end" class="lab sm">SEMI EQUIPMENT</text><g class="mark"><title>SEMI EQUIPMENT｜趨勢強度 -100｜新觸發 6.7%｜成交額 $13.9B</title><rect x="290.0" y="425" width="275.0" height="16" rx="3" fill="#b83d2c"/></g><text x="571.0" y="437.0" text-anchor="start" class="val">-100</text><text x="280" y="463.0" text-anchor="end" class="lab sm">AI SERVERS &amp; HARDWARE</text><g class="mark"><title>AI SERVERS &amp; HARDWARE｜趨勢強度 -100｜新觸發 14.3%｜成交額 $12.0B</title><rect x="290.0" y="451" width="275.0" height="16" rx="3" fill="#b83d2c"/></g><text x="571.0" y="463.0" text-anchor="start" class="val">-100</text><text x="280" y="489.0" text-anchor="end" class="lab sm">AI CLOUD &amp; DATA CENTERS</text><g class="mark"><title>AI CLOUD &amp; DATA CENTERS｜趨勢強度 -100｜新觸發 0%｜成交額 $17.0B</title><rect x="290.0" y="477" width="275.0" height="16" rx="3" fill="#b83d2c"/></g><text x="571.0" y="489.0" text-anchor="start" class="val">-100</text><text x="280" y="515.0" text-anchor="end" class="lab sm">NUCLEAR &amp; SMR</text><g class="mark"><title>NUCLEAR &amp; SMR｜趨勢強度 -100｜新觸發 0%｜成交額 $1.8B</title><rect x="290.0" y="503" width="275.0" height="16" rx="3" fill="#b83d2c"/></g><text x="571.0" y="515.0" text-anchor="start" class="val">-100</text><text x="280" y="541.0" text-anchor="end" class="lab sm">QUANTUM</text><g class="mark"><title>QUANTUM｜趨勢強度 -100｜新觸發 0%｜成交額 $1.7B</title><rect x="290.0" y="529" width="275.0" height="16" rx="3" fill="#b83d2c"/></g><text x="571.0" y="541.0" text-anchor="start" class="val">-100</text><text x="280" y="567.0" text-anchor="end" class="lab sm">CRYPTO &amp; DIGITAL ASSETS</text><g class="mark"><title>CRYPTO &amp; DIGITAL ASSETS｜趨勢強度 -100｜新觸發 11.1%｜成交額 $7.7B</title><rect x="290.0" y="555" width="275.0" height="16" rx="3" fill="#b83d2c"/></g><text x="571.0" y="567.0" text-anchor="start" class="val">-100</text></svg><p class="foot-s">趨勢強度＝板塊內 CE 多頭比例 × 200 − 100。今天沒有任何領先板塊；五檔中只有 NOW 屬於追蹤板塊（企業軟體，已標示）。避開：NUCLEAR & SMR、QUANTUM、CRYPTO & DIGITAL ASSETS。</p></div>
+<div class="panel"><h3>X 熱度（72 小時，1,870 則）</h3><ul class="hot"><li><b>NBIS</b><span>92 則 · 27 位作者</span><em class="">背離</em></li><li><b>CRWV</b><span>61 則 · 29 位作者</span><em class="">背離</em></li><li><b>NVDA</b><span>47 則 · 23 位作者</span><em class="nil">—</em></li><li><b>MU</b><span>40 則 · 18 位作者</span><em class="">背離</em></li><li><b>IREN</b><span>33 則 · 12 位作者</span><em class="">背離</em></li><li><b>SKHY</b><span>33 則 · 9 位作者</span><em class="nil">—</em></li><li><b>AMD</b><span>32 則 · 15 位作者</span><em class="nil">—</em></li><li><b>QQQ</b><span>30 則 · 11 位作者</span><em class="nil">—</em></li></ul><p class="foot-s">熱門前八名中有 4 檔被系統標為背離或成熟趨勢，今天沒有任何「多頭共振」標的；五檔都不在熱門名單上，訊號來自價格與量能，不是社群。</p></div>
+</div>
+</section>
+
+<section id="system"><div class="sec-h"><span>05</span><h2>系統原始交易計畫</h2></div>
+<p class="lede-s">P1Research report_trading_brief 的三檔條件式交易（全部是 STRIKE_WATCH），原樣照錄。系統結論：「不是開盤買 3 檔：優先等待 NRXS、ZETA、CRNC 的 VWAP 與量能確認。沒有確認，就是不交易。」</p>
+<div class="tw"><table><thead><tr><th>標的</th><th>進場／確認</th><th class="num">停損</th><th class="num">目標</th><th class="num">RVOL</th><th>本報告</th></tr></thead><tbody><tr><td><b>NRXS</b></td><td>&gt;7.74，且站上當日 VWAP、RVOL ≥1.2</td><td class="num">6.97</td><td class="num">—</td><td class="num">9.59</td><td>入選</td></tr><tr><td><b>ZETA</b></td><td>&gt;33.55，且站上當日 VWAP、RVOL ≥1.2</td><td class="num">31.98</td><td class="num">34 / 35</td><td class="num">1.16</td><td>未入選：RVOL 1.16 未達 1.2</td></tr><tr><td><b>CRNC</b></td><td>&gt;9.17，且站上當日 VWAP、RVOL ≥1.2</td><td class="num">8.42</td><td class="num">10 / 11</td><td class="num">1.31</td><td>入選</td></tr></tbody></table></div>
+</section>
+
+<section id="earnings"><div class="sec-h"><span>06</span><h2>財報時間軸</h2></div>
+<div class="panel"><svg viewBox="0 0 900 120" role="img" aria-label="五檔財報時間軸" xmlns="http://www.w3.org/2000/svg"><line x1="30" y1="60" x2="870" y2="60" class="axisl"/><line x1="254.0" y1="52" x2="254.0" y2="68" class="grid"/><text x="254.0" y="86" text-anchor="middle" class="ax">11/01</text><line x1="674.0" y1="52" x2="674.0" y2="68" class="grid"/><text x="674.0" y="86" text-anchor="middle" class="ax">12/01</text><circle cx="30.0" cy="60" r="5" fill="#13293d"/><text x="30.0" y="86" text-anchor="start" class="ax">今天 10/16</text><g class="mark"><title>NOW 財報 2026-10-28（距今 12 天）</title><circle cx="198.0" cy="60" r="7" fill="#c08a12" stroke="#fff" stroke-width="2"/></g><text x="198.0" y="38" text-anchor="middle" class="lab sm">NOW 10/28</text><g class="mark"><title>MA 財報 2026-10-29（距今 13 天）</title><circle cx="212.0" cy="60" r="7" fill="#c08a12" stroke="#fff" stroke-width="2"/></g><text x="212.0" y="106" text-anchor="middle" class="lab sm">MA 10/29</text><g class="mark"><title>NRXS 財報 2026-11-09（距今 24 天）</title><circle cx="366.0" cy="60" r="7" fill="#2f6db5" stroke="#fff" stroke-width="2"/></g><text x="366.0" y="38" text-anchor="middle" class="lab sm">NRXS 11/09</text><g class="mark"><title>CRNC 財報 2026-11-18（距今 33 天）</title><circle cx="492.0" cy="60" r="7" fill="#2f6db5" stroke="#fff" stroke-width="2"/></g><text x="492.0" y="106" text-anchor="middle" class="lab sm">CRNC 11/18</text><g class="mark"><title>SNPS 財報 2026-12-09（距今 54 天）</title><circle cx="786.0" cy="60" r="7" fill="#2f6db5" stroke="#fff" stroke-width="2"/></g><text x="786.0" y="38" text-anchor="middle" class="lab sm">SNPS 12/09</text></svg></div>
+<p class="lede-s">NOW（10/28）與 MA（10/29）兩週內公布財報，持有要預先決定財報前是否減碼。系統列出的下週重點：</p><ul class="inline"><li><b>CB</b> 10/20　EPS 預估 6.79</li><li><b>ISRG</b> 10/20　EPS 預估 2.65</li><li><b>NFLX</b> 10/20　EPS 預估 0.821</li><li><b>NOC</b> 10/20　EPS 預估 7.18</li></ul>
+</section>
+
+<section id="checklist"><div class="sec-h"><span>07</span><h2>開盤執行清單</h2></div>
+<ol class="rules">
+<li>先看 SPY：開盤後若跌破 765，總曝險降到 15% 以下，五檔都只留觀察。</li>
+<li>每一檔都要同時滿足三件事：價格突破 10/15 收盤、站上當日 VWAP、當日 RVOL ≥ 1.2，缺一不做。</li>
+<li>前 15 分鐘總曝險 ≤ 15%；確認後也不超過 25%。</li>
+<li>NRXS、CRNC 是低價小型股，滑價與跳空風險高，部位用區間下限。</li>
+<li>到第一目標先減碼，失效價一到就出場，不攤平。</li>
+</ol>
+</section>
+</main>
+
+<footer class="wrap foot"><p>市場資料截至 2026-10-15 收盤 · 僅供研究與風險規劃，不保證獲利。</p>
+<p>資料來源：P1Research report_trading_brief、watchlist、report_ticker_brief、price_target、earnings_calendar、report_options_flow、report_sector_rotation（查詢時間 2026-10-16 06:19–06:21 UTC）。失效價（NOW、SNPS、MA）、目標選取、報酬／風險、部位上限、篩選門檻與排序為本報告依上述數字計算或判讀。新聞標題來自 P1Research 輸出，未附連結。</p></footer>
+</body></html>
