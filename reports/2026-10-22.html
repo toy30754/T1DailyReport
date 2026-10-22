@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>2026-10-22｜反彈後盤前轉弱：PEP、RSP、UNH、LOW、ZS｜P1 × CFTC × GEX</title><meta name="description" content="重新取得盤前價格與技術資料：五檔條件式候選、零筆立即執行方案。含 CFTC、指數 GEX、財報風險與完整原生排名。"><style>
+:root{--ink:#193b42;--muted:#627775;--paper:#f5f5ef;--white:#fff;--line:#d4dfd7;--green:#28634f;--red:#a44535;--gold:#a2742f;--border:1px solid var(--line);--radius-panel:12px;--gray-500:var(--muted)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.8 -apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans TC','Microsoft JhengHei',sans-serif}.page{max-width:1250px;margin:auto;padding:48px 32px 60px}header{padding:18px 0 32px;border-bottom:2px solid var(--green);margin-bottom:32px}h1{font-size:clamp(29px,4vw,49px);line-height:1.35;letter-spacing:-1px;margin:0 0 22px}h2{font-size:27px;line-height:1.4;margin:0 0 12px}h3{font-size:20px;margin:26px 0 12px}p{margin:14px 0}section{margin:0 0 54px;scroll-margin-top:18px}.date-range,.lede,footer{color:var(--muted);font-size:13px}.rule{border:0;border-top:1px solid var(--line);margin:0 0 20px}a{color:var(--green);text-underline-offset:4px;overflow-wrap:anywhere}button{border:var(--border);background:white;color:var(--ink);border-radius:6px;padding:7px 14px;cursor:pointer}nav{line-height:2.5;font-size:13px}.summary-band{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}.stat-card{padding:23px 20px;border:var(--border);border-radius:12px;background:white;min-width:0}.stat-card.warn{background:#fff5e4;border-color:#e6d1a8}.stat-num{font-size:clamp(24px,2.8vw,36px);font-weight:760;line-height:1.25;overflow-wrap:anywhere}.stat-label{font-weight:650;font-size:13px;margin-top:12px}.stat-delta{font-size:12px;color:var(--muted);margin-top:6px}.highlights{list-style:none;padding:0;margin:18px 0}.highlights li{padding:13px 0;border-bottom:1px solid var(--line)}.tw{overflow-x:auto;border:var(--border);border-radius:10px;background:white;margin:20px 0}.shipped{border-collapse:collapse;width:100%;font-size:13px;min-width:700px}th,td{text-align:left;vertical-align:top;padding:12px 14px;border-bottom:1px solid var(--line);min-width:85px}th{background:#eaf0e9;color:var(--green);font-weight:650;font-size:12px}td{font-variant-numeric:tabular-nums}tr:last-child td{border:0}tbody tr:hover{background:#f8faf5}.chart-panel{border:var(--border);background:white;border-radius:12px;padding:22px;margin:22px 0}.plot{width:100%;height:340px;min-width:0;overflow:hidden}.plot.tall{height:480px}.plot svg{width:100%;height:100%;display:block}.chart-caption{font-size:12px;color:var(--muted);margin-top:14px}.risk-dot{display:inline-block;width:7px;height:7px;border-radius:50%;margin-right:6px}.low{background:var(--green)}.high{background:var(--red)}details{margin:18px 0}summary{cursor:pointer;color:var(--green);font-weight:650}footer{border-top:1px solid var(--line);padding-top:22px}.num{text-align:right}
+@media(max-width:760px){.page{padding:22px 16px 45px}.summary-band{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.stat-card{padding:17px 13px}.stat-num{font-size:24px}h2{font-size:23px}.chart-panel{padding:12px 8px}.plot{height:280px}.plot.tall{height:380px}section{margin-bottom:38px}.shipped{font-size:12px}th,td{padding:10px}nav{line-height:2.8}}
+@media print{body{background:white;font-size:11px}.page{max-width:none;padding:0}button,nav{display:none}.tw{overflow:visible;border-radius:0}.shipped{min-width:0;font-size:8px}th,td{padding:6px 5px;min-width:0;overflow-wrap:anywhere}.chart-panel,.summary-band{break-inside:avoid}h2,h3{break-after:avoid}section{margin-bottom:26px}.plot{height:270px}.plot.tall{height:350px}a{color:inherit}details:not([open]){display:none}header{margin-bottom:20px}h1{font-size:30px}@page{size:A4;margin:14mm}}
+#rankChart,#changeChart{height:460px}@media(max-width:760px){.plot,.plot.tall{height:auto;overflow-x:auto}.plot svg{min-width:680px;height:auto}.plot.tall svg{min-width:760px}}@media print{.plot svg{min-width:0!important}.plot,.plot.tall{overflow:visible!important;height:auto}}</style></head><body><div class="page"><header><a href="/">← 返回文章列表</a><div class="header-top"><h1>反彈後盤前轉弱：五檔相對強勢候選</h1></div><div class="date-range">P1 原生交易報告 × CFTC × 指數 GEX｜適用 2026-10-22 美股交易日<br>生成 2026-10-22 13:21 UTC ／ 10-22 21:21 台灣 ／ 10-22 09:21 EDT<br>盤前快照 2026-10-22 13:16 UTC ／ 10-22 21:16 台灣 ／ 10-22 09:16 EDT</div></header><nav><a href="#s1">1 摘要</a> <a href="#s2">2 市場</a> <a href="#s3">3 X 樣本</a> <a href="#s4">4 GEX / CFTC</a> <a href="#s5">5 輪動</a> <a href="#s6">6 五檔候選</a> <a href="#s7">7 財報</a> <a href="#s8">8 計畫</a> <button onclick="window.print()">列印 / PDF</button></nav><section id="s1"><h2>1. Executive Brief</h2><hr class="rule"><div class="summary-band"><div class="stat-card warn"><div class="stat-num">不要直接交易</div><div class="stat-label">開盤前結論</div><div class="stat-delta flat">五檔均為候選，尚未觸發</div></div><div class="stat-card warn"><div class="stat-num">5 檔</div><div class="stat-label">PEP · RSP · UNH · LOW · ZS</div><div class="stat-delta flat">研究排序，不代表五筆買單</div></div><div class="stat-card warn"><div class="stat-num">−1.73%</div><div class="stat-label">QQQ 盤前</div><div class="stat-delta flat">SOXX −4.50%，科技仍弱</div></div><div class="stat-card warn"><div class="stat-num">0 筆</div><div class="stat-label">目前可執行方案</div><div class="stat-delta flat">沒有可確認的扣費後 2R 方案</div></div></div><p>本次從新取得的資料重新篩選，未採用任何過往持倉、帳戶金額、風險比例或已成交假設。最強機會是 <strong>PEP 與 UNH 的盤前相對強勢</strong>；最大風險是科技股再度下挫，拖累個股突破。五檔加入觀察名單不代表已買入。</p><p>原生模型以 10/21 收盤選出 AXP、PEP、LOW；本報告保留原始結果供核對，另外建立五檔研究名單。AXP 因 10/23 財報事件排除。UNH、ZS 為額外技術篩選，並非宣稱原生模型 finalTrades 已選中。</p></section><section id="s2"><h2>2. 市場總結</h2><hr class="rule"><div class="tw"><table class="shipped"><thead><tr><th>代號</th><th>10/21 收盤 TV</th><th>收盤漲跌</th><th>盤前快照</th><th>盤前漲跌</th><th>盤前股數</th><th>日線 Cycle</th></tr></thead><tbody><tr><td>SPY</td><td>773.09</td><td>+0.53%</td><td>765.75</td><td>-0.95%</td><td>1,167,791</td><td>Bull End</td></tr><tr><td>QQQ</td><td>725.2</td><td>+1.05%</td><td>712.689</td><td>-1.73%</td><td>1,751,235</td><td>Bear Entry</td></tr><tr><td>IWM</td><td>276.48</td><td>+0.25%</td><td>274.74</td><td>-0.63%</td><td>519,004</td><td>Downtrend</td></tr><tr><td>SOXX</td><td>510.36</td><td>+2.07%</td><td>487.4186</td><td>-4.50%</td><td>640,259</td><td>Downtrend（原生）</td></tr></tbody></table></div><div class="chart-panel"><div id="changeChart" class="plot" role="img" aria-label="changeChart，資料與解讀見同章表格"><svg width="1060" height="460" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" baseProfile="full" viewBox="0 0 1060 460">
+<rect width="1060" height="460" x="0" y="0" fill="#fff"></rect>
+<path d="M70.5 25L70.5 425" fill="none" pointer-events="visible" stroke="#E0E6F1" class="zr4-cls-14"></path>
+<path d="M205.5 25L205.5 425" fill="none" pointer-events="visible" stroke="#E0E6F1" class="zr4-cls-14"></path>
+<path d="M341.5 25L341.5 425" fill="none" pointer-events="visible" stroke="#E0E6F1" class="zr4-cls-14"></path>
+<path d="M477.5 25L477.5 425" fill="none" pointer-events="visible" stroke="#E0E6F1" class="zr4-cls-14"></path>
+<path d="M613.5 25L613.5 425" fill="none" pointer-events="visible" stroke="#E0E6F1" class="zr4-cls-14"></path>
+<path d="M748.5 25L748.5 425" fill="none" pointer-events="visible" stroke="#E0E6F1" class="zr4-cls-14"></path>
+<path d="M884.5 25L884.5 425" fill="none" pointer-events="visible" stroke="#E0E6F1" class="zr4-cls-14"></path>
+<path d="M1020.5 25L1020.5 425" fill="none" pointer-events="visible" stroke="#E0E6F1" class="zr4-cls-14"></path>
+<path d="M748.5 425L748.5 25" fill="none" pointer-events="visible" stroke="#6E7079" stroke-linecap="round" class="zr4-cls-14"></path>
+<text dominant-baseline="central" text-anchor="start" style="font-size:12px;font-family:sans-serif;" xml:space="preserve" transform="translate(1035 425)" fill="#193b42">盤前變動 %</text>
+<path d="M748.6 425.5L743.6 425.5" fill="none" pointer-events="visible" stroke="#6E7079" class="zr4-cls-14"></path>
+<path d="M748.6 380.5L743.6 380.5" fill="none" pointer-events="visible" stroke="#6E7079" class="zr4-cls-14"></path>
+<path d="M748.6 336.5L743.6 336.5" fill="none" pointer-events="visible" stroke="#6E7079" class="zr4-cls-14"></path>
+<path d="M748.6 291.5L743.6 291.5" fill="none" pointer-events="visible" stroke="#6E7079" class="zr4-cls-14"></path>
+<path d="M748.6 247.5L743.6 247.5" fill="none" pointer-events="visible" stroke="#6E7079" class="zr4-cls-14"></path>
+<path d="M748.6 203.5L743.6 203.5" fill="none" pointer-events="visible" stroke="#6E7079" class="zr4-cls-14"></path>
+<path d="M748.6 158.5L743.6 158.5" fill="none" pointer-events="visible" stroke="#6E7079" class="zr4-cls-14"></path>
+<path d="M748.6 114.5L743.6 114.5" fill="none" pointer-events="visible" stroke="#6E7079" class="zr4-cls-14"></path>
+<path d="M748.6 69.5L743.6 69.5" fill="none" pointer-events="visible" stroke="#6E7079" class="zr4-cls-14"></path>
+<path d="M748.6 25.5L743.6 25.5" fill="none" pointer-events="visible" stroke="#6E7079" class="zr4-cls-14"></path>
+<text dominant-baseline="central" text-anchor="end" style="font-size:12px;font-family:sans-serif;" transform="translate(62 402.7778)" fill="#193b42">IWM</text>
+<text dominant-baseline="central" text-anchor="end" style="font-size:12px;font-family:sans-serif;" transform="translate(62 358.3333)" fill="#193b42">RSP</text>
+<text dominant-baseline="central" text-anchor="end" style="font-size:12px;font-family:sans-serif;" transform="translate(62 313.8889)" fill="#193b42">SPY</text>
+<text dominant-baseline="central" text-anchor="end" style="font-size:12px;font-family:sans-serif;" transform="translate(62 269.4444)" fill="#193b42">PEP</text>
+<text dominant-baseline="central" text-anchor="end" style="font-size:12px;font-family:sans-serif;" transform="translate(62 225)" fill="#193b42">QQQ</text>
+<text dominant-baseline="central" text-anchor="end" style="font-size:12px;font-family:sans-serif;" transform="translate(62 180.5556)" fill="#193b42">SOXX</text>
+<text dominant-baseline="central" text-anchor="end" style="font-size:12px;font-family:sans-serif;" transform="translate(62 136.1111)" fill="#193b42">ZS</text>
+<text dominant-baseline="central" text-anchor="end" style="font-size:12px;font-family:sans-serif;" transform="translate(62 91.6667)" fill="#193b42">LOW</text>
+<text dominant-baseline="central" text-anchor="end" style="font-size:12px;font-family:sans-serif;" transform="translate(62 47.2222)" fill="#193b42">UNH</text>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:12px;font-family:sans-serif;" y="6" transform="translate(70 433)" fill="#193b42">-5</text>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:12px;font-family:sans-serif;" y="6" transform="translate(205.7143 433)" fill="#193b42">-4</text>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:12px;font-family:sans-serif;" y="6" transform="translate(341.4286 433)" fill="#193b42">-3</text>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:12px;font-family:sans-serif;" y="6" transform="translate(477.1429 433)" fill="#193b42">-2</text>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:12px;font-family:sans-serif;" y="6" transform="translate(612.8571 433)" fill="#193b42">-1</text>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:12px;font-family:sans-serif;" y="6" transform="translate(748.5714 433)" fill="#193b42">0</text>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:12px;font-family:sans-serif;" y="6" transform="translate(884.2857 433)" fill="#193b42">1</text>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:12px;font-family:sans-serif;" y="6" transform="translate(1020 433)" fill="#193b42">2</text>
+<path d="M748.6 387.4l-85.4 0l0 30.7l85.4 0Z" fill="#b35342" ecmeta_series_index="0" ecmeta_data_index="0" ecmeta_ssr_type="chart" class="zr4-cls-15"></path>
+<path d="M748.6 343l-47.7 0l0 30.7l47.7 0Z" fill="#b35342" ecmeta_series_index="0" ecmeta_data_index="1" ecmeta_ssr_type="chart" class="zr4-cls-15"></path>
+<path d="M748.6 298.6l-128.9 0l0 30.7l128.9 0Z" fill="#b35342" ecmeta_series_index="0" ecmeta_data_index="2" ecmeta_ssr_type="chart" class="zr4-cls-15"></path>
+<path d="M748.6 254.1l186.4 0l0 30.7l-186.4 0Z" fill="#28634f" ecmeta_series_index="0" ecmeta_data_index="3" ecmeta_ssr_type="chart" class="zr4-cls-16"></path>
+<path d="M748.6 209.7l-234.1 0l0 30.7l234.1 0Z" fill="#b35342" ecmeta_series_index="0" ecmeta_data_index="4" ecmeta_ssr_type="chart" class="zr4-cls-15"></path>
+<path d="M748.6 165.2l-610.1 0l0 30.7l610.1 0Z" fill="#b35342" ecmeta_series_index="0" ecmeta_data_index="5" ecmeta_ssr_type="chart" class="zr4-cls-15"></path>
+<path d="M748.6 120.8l-19.9 0l0 30.7l19.9 0Z" fill="#b35342" ecmeta_series_index="0" ecmeta_data_index="6" ecmeta_ssr_type="chart" class="zr4-cls-15"></path>
+<path d="M748.6 76.3l30.4 0l0 30.7l-30.4 0Z" fill="#28634f" ecmeta_series_index="0" ecmeta_data_index="7" ecmeta_ssr_type="chart" class="zr4-cls-16"></path>
+<path d="M748.6 31.9l163.1 0l0 30.7l-163.1 0Z" fill="#28634f" ecmeta_series_index="0" ecmeta_data_index="8" ecmeta_ssr_type="chart" class="zr4-cls-16"></path>
+<text dominant-baseline="central" text-anchor="start" style="font-size:12px;font-family:sans-serif;" transform="translate(753.5714 402.7778)" fill="#333" stroke="rgb(255,255,255)" stroke-width="2" paint-order="stroke" stroke-miterlimit="2">-0.63%</text>
+<text dominant-baseline="central" text-anchor="start" style="font-size:12px;font-family:sans-serif;" transform="translate(753.5714 358.3333)" fill="#333" stroke="rgb(255,255,255)" stroke-width="2" paint-order="stroke" stroke-miterlimit="2">-0.35%</text>
+<text dominant-baseline="central" text-anchor="start" style="font-size:12px;font-family:sans-serif;" transform="translate(753.5714 313.8889)" fill="#333" stroke="rgb(255,255,255)" stroke-width="2" paint-order="stroke" stroke-miterlimit="2">-0.95%</text>
+<text dominant-baseline="central" text-anchor="start" style="font-size:12px;font-family:sans-serif;" transform="translate(939.9645 269.4444)" fill="#333" stroke="rgb(255,255,255)" stroke-width="2" paint-order="stroke" stroke-miterlimit="2">1.37%</text>
+<text dominant-baseline="central" text-anchor="start" style="font-size:12px;font-family:sans-serif;" transform="translate(753.5714 225)" fill="#333" stroke="rgb(255,255,255)" stroke-width="2" paint-order="stroke" stroke-miterlimit="2">-1.73%</text>
+<text dominant-baseline="central" text-anchor="start" style="font-size:12px;font-family:sans-serif;" transform="translate(753.5714 180.5556)" fill="#333" stroke="rgb(255,255,255)" stroke-width="2" paint-order="stroke" stroke-miterlimit="2">-4.50%</text>
+<text dominant-baseline="central" text-anchor="start" style="font-size:12px;font-family:sans-serif;" transform="translate(753.5714 136.1111)" fill="#333" stroke="rgb(255,255,255)" stroke-width="2" paint-order="stroke" stroke-miterlimit="2">-0.15%</text>
+<text dominant-baseline="central" text-anchor="start" style="font-size:12px;font-family:sans-serif;" transform="translate(783.9511 91.6667)" fill="#333" stroke="rgb(255,255,255)" stroke-width="2" paint-order="stroke" stroke-miterlimit="2">0.22%</text>
+<text dominant-baseline="central" text-anchor="start" style="font-size:12px;font-family:sans-serif;" transform="translate(916.6238 47.2222)" fill="#333" stroke="rgb(255,255,255)" stroke-width="2" paint-order="stroke" stroke-miterlimit="2">1.20%</text>
+<style ><![CDATA[
+.zr4-cls-14:hover {
+pointer-events:none;
+}
+.zr4-cls-15:hover {
+cursor:pointer;
+fill:rgba(196,91,72,1);
+}
+.zr4-cls-16:hover {
+cursor:pointer;
+fill:rgba(44,108,86,1);
+}
+
+]]>
+
+</style>
+</svg></div></div><p>盤前價格為 TradingView 快照，供應端未提供逐筆時間與延遲權限，因此不能標為即時。P1 的 quote 仍是 10/21 收盤。SPY 收盤 P1 773.16 與 TV 773.09、QQQ 725.21 與 725.20 有差異；LOW P1 漲跌 −0.37% 與 TV／bars −0.99% 不一致，本報告日線以 cycle／bars，盤前以 TV 分欄呈現。</p><p>SPY 昨日 CE 翻多，但盤前 765.75 已低於昨日 CE 767.58 與 EMA20 770.38；QQQ 仍為 Bear Entry、CE 空頭，EMA20 732.13 明顯在上方。IWM Downtrend 且低於 EMA200 276.55。RSP 相對 QQQ 抗跌只是廣度代理，不是全市場上漲家數。</p><p>多頭情境：SPY 收復 767.58，QQQ 收復昨日收盤約 725.2，兩者站穩當日 VWAP，個股再突破。弱勢情境：指數無法收復、跌破開盤區間低點，當日取消新增多單。這些是本次研究門檻，不是模型必然預測。</p><p><strong>US10Y：5.032%</strong>，TV 快照來源時間／延遲未明；不能當成官方日終殖利率，也不將 −1.70% 的相對變動誤寫為 −1.70 個百分點。利率回升且 QQQ 再走弱時，成長股候選降級；本次未核實盤前跌勢新聞原因，不推定單一催化。</p><p><a href="https://www.nyse.com/trade/hours-calendars">NYSE 正常時段</a>：10/22 為正常交易日，09:30 EDT／21:30 台灣開盤；最早 09:45 EDT／21:45 台灣才有完整首根 15 分鐘 K 線。<a href="https://www.bea.gov/news/schedule">BEA</a> 列 10/29 08:30 EDT／20:30 台灣公布第三季 GDP 初值；尚未公布，不預填數值。</p></section><section id="s3"><h2>3. X Analysis｜追蹤帳號樣本</h2><hr class="rule"><div class="chart-panel"><div id="socialChart" class="plot" role="img" aria-label="socialChart，資料與解讀見同章表格"><svg width="1060" height="340" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" baseProfile="full" viewBox="0 0 1060 340">
+<rect width="1060" height="340" x="0" y="0" fill="#fff"></rect>
+<path d="M70 280.5L1028 280.5" fill="none" pointer-events="visible" stroke="#E0E6F1" class="zr2-cls-7"></path>
+<path d="M70 228.5L1028 228.5" fill="none" pointer-events="visible" stroke="#E0E6F1" class="zr2-cls-7"></path>
+<path d="M70 176.5L1028 176.5" fill="none" pointer-events="visible" stroke="#E0E6F1" class="zr2-cls-7"></path>
+<path d="M70 124.5L1028 124.5" fill="none" pointer-events="visible" stroke="#E0E6F1" class="zr2-cls-7"></path>
+<path d="M70 72.5L1028 72.5" fill="none" pointer-events="visible" stroke="#E0E6F1" class="zr2-cls-7"></path>
+<path d="M70 20.5L1028 20.5" fill="none" pointer-events="visible" stroke="#E0E6F1" class="zr2-cls-7"></path>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:12px;font-family:sans-serif;" y="-6" transform="translate(70 5)" fill="#193b42">mentions</text>
+<path d="M70 280.5L1028 280.5" fill="none" pointer-events="visible" stroke="#6E7079" stroke-linecap="round" class="zr2-cls-7"></path>
+<path d="M70.5 280L70.5 285" fill="none" pointer-events="visible" stroke="#6E7079" class="zr2-cls-7"></path>
+<path d="M190.5 280L190.5 285" fill="none" pointer-events="visible" stroke="#6E7079" class="zr2-cls-7"></path>
+<path d="M309.5 280L309.5 285" fill="none" pointer-events="visible" stroke="#6E7079" class="zr2-cls-7"></path>
+<path d="M429.5 280L429.5 285" fill="none" pointer-events="visible" stroke="#6E7079" class="zr2-cls-7"></path>
+<path d="M549.5 280L549.5 285" fill="none" pointer-events="visible" stroke="#6E7079" class="zr2-cls-7"></path>
+<path d="M669.5 280L669.5 285" fill="none" pointer-events="visible" stroke="#6E7079" class="zr2-cls-7"></path>
+<path d="M788.5 280L788.5 285" fill="none" pointer-events="visible" stroke="#6E7079" class="zr2-cls-7"></path>
+<path d="M908.5 280L908.5 285" fill="none" pointer-events="visible" stroke="#6E7079" class="zr2-cls-7"></path>
+<path d="M1028.5 280L1028.5 285" fill="none" pointer-events="visible" stroke="#6E7079" class="zr2-cls-7"></path>
+<text dominant-baseline="central" text-anchor="end" style="font-size:12px;font-family:sans-serif;" transform="translate(62 280)" fill="#193b42">0</text>
+<text dominant-baseline="central" text-anchor="end" style="font-size:12px;font-family:sans-serif;" transform="translate(62 228)" fill="#193b42">30</text>
+<text dominant-baseline="central" text-anchor="end" style="font-size:12px;font-family:sans-serif;" transform="translate(62 176)" fill="#193b42">60</text>
+<text dominant-baseline="central" text-anchor="end" style="font-size:12px;font-family:sans-serif;" transform="translate(62 124)" fill="#193b42">90</text>
+<text dominant-baseline="central" text-anchor="end" style="font-size:12px;font-family:sans-serif;" transform="translate(62 72)" fill="#193b42">120</text>
+<text dominant-baseline="central" text-anchor="end" style="font-size:12px;font-family:sans-serif;" transform="translate(62 20)" fill="#193b42">150</text>
+<text dominant-baseline="central" text-anchor="end" style="font-size:12px;font-family:sans-serif;" transform="matrix(0.819,-0.574,0.574,0.819,129.875,288)" fill="#193b42">NBIS</text>
+<text dominant-baseline="central" text-anchor="end" style="font-size:12px;font-family:sans-serif;" transform="matrix(0.819,-0.574,0.574,0.819,249.625,288)" fill="#193b42">SPCX</text>
+<text dominant-baseline="central" text-anchor="end" style="font-size:12px;font-family:sans-serif;" transform="matrix(0.819,-0.574,0.574,0.819,369.375,288)" fill="#193b42">NVDA</text>
+<text dominant-baseline="central" text-anchor="end" style="font-size:12px;font-family:sans-serif;" transform="matrix(0.819,-0.574,0.574,0.819,489.125,288)" fill="#193b42">META</text>
+<text dominant-baseline="central" text-anchor="end" style="font-size:12px;font-family:sans-serif;" transform="matrix(0.819,-0.574,0.574,0.819,608.875,288)" fill="#193b42">CRWV</text>
+<text dominant-baseline="central" text-anchor="end" style="font-size:12px;font-family:sans-serif;" transform="matrix(0.819,-0.574,0.574,0.819,728.625,288)" fill="#193b42">IREN</text>
+<text dominant-baseline="central" text-anchor="end" style="font-size:12px;font-family:sans-serif;" transform="matrix(0.819,-0.574,0.574,0.819,848.375,288)" fill="#193b42">MU</text>
+<text dominant-baseline="central" text-anchor="end" style="font-size:12px;font-family:sans-serif;" transform="matrix(0.819,-0.574,0.574,0.819,968.125,288)" fill="#193b42">AMZN</text>
+<path d="M112.9 280l34 0l0 -223.6l-34 0Z" fill="#b35342" ecmeta_series_index="0" ecmeta_data_index="0" ecmeta_ssr_type="chart" class="zr2-cls-8"></path>
+<path d="M232.6 280l34 0l0 -188.9l-34 0Z" fill="#829087" ecmeta_series_index="0" ecmeta_data_index="1" ecmeta_ssr_type="chart" class="zr2-cls-9"></path>
+<path d="M352.4 280l34 0l0 -126.5l-34 0Z" fill="#b35342" ecmeta_series_index="0" ecmeta_data_index="2" ecmeta_ssr_type="chart" class="zr2-cls-8"></path>
+<path d="M472.1 280l34 0l0 -121.3l-34 0Z" fill="#b35342" ecmeta_series_index="0" ecmeta_data_index="3" ecmeta_ssr_type="chart" class="zr2-cls-8"></path>
+<path d="M591.9 280l34 0l0 -81.5l-34 0Z" fill="#b35342" ecmeta_series_index="0" ecmeta_data_index="4" ecmeta_ssr_type="chart" class="zr2-cls-8"></path>
+<path d="M711.6 280l34 0l0 -76.3l-34 0Z" fill="#b35342" ecmeta_series_index="0" ecmeta_data_index="5" ecmeta_ssr_type="chart" class="zr2-cls-8"></path>
+<path d="M831.4 280l34 0l0 -50.3l-34 0Z" fill="#829087" ecmeta_series_index="0" ecmeta_data_index="6" ecmeta_ssr_type="chart" class="zr2-cls-9"></path>
+<path d="M951.1 280l34 0l0 -39.9l-34 0Z" fill="#28634f" ecmeta_series_index="0" ecmeta_data_index="7" ecmeta_ssr_type="chart" class="zr2-cls-10"></path>
+<style ><![CDATA[
+.zr2-cls-7:hover {
+pointer-events:none;
+}
+.zr2-cls-8:hover {
+cursor:pointer;
+fill:rgba(196,91,72,1);
+}
+.zr2-cls-9:hover {
+cursor:pointer;
+fill:rgba(143,158,148,1);
+}
+.zr2-cls-10:hover {
+cursor:pointer;
+fill:rgba(44,108,86,1);
+}
+
+]]>
+
+</style>
+</svg></div></div><p>原生 72 小時樣本：1,900 則去重貼文，2026-10-19 13:08 UTC 至 10-22 13:08 UTC（台灣 21:08／EDT 09:08）。獨立 24 小時 feed 截至 10/22 12:58 UTC（20:58 台灣／08:58 EDT），673 則；一個帳號回傳未找到。兩窗口不能混成同一統計。</p><div class="tw"><table class="shipped"><thead><tr><th>帳號</th><th>貼文 UTC／台灣／EDT</th><th>社群主張（非已證實事實）</th><th>連結限制</th></tr></thead><tbody><tr><td>@labubu_trader</td><td>10/22 05:54／13:54／01:54</td><td>表示會依 VIX 水位考慮回補空單</td><td>只有附鏈，未提供貼文 permalink</td></tr><tr><td>@labubu_trader</td><td>10/21 23:56／10/22 07:56／10/21 19:56</td><td>認為實現波動升高可能增加系統性賣壓</td><td>屬個人推論，未獨立證實</td></tr></tbody></table></div><p>原工具附鏈：<a href="https://t.co/UR7uX5V0ec">VIX 討論附鏈</a>、<a href="https://t.co/6aUwtkUxAx">波動討論附鏈</a>；兩者都不是已核實的貼文原文網址。研究推論：NBIS、CRWV 等熱度高但 CE 偏空，不能由熱門直接推導買進。PEP、LOW、RSP 的原生樣本各僅 1 次提及，社群佐證薄弱。</p></section><section id="s4"><h2>4. GEX／Options Flow × CFTC</h2><hr class="rule"><div class="chart-panel"><div id="gexChart" class="plot" role="img" aria-label="gexChart，資料與解讀見同章表格"><svg width="1060" height="340" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" baseProfile="full" viewBox="0 0 1060 340">
+<rect width="1060" height="340" x="0" y="0" fill="#fff"></rect>
+<path d="M70 298.5L1025 298.5" fill="none" pointer-events="visible" stroke="#E0E6F1" class="zr3-cls-11"></path>
+<path d="M70 242.5L1025 242.5" fill="none" pointer-events="visible" stroke="#E0E6F1" class="zr3-cls-11"></path>
+<path d="M70 187.5L1025 187.5" fill="none" pointer-events="visible" stroke="#E0E6F1" class="zr3-cls-11"></path>
+<path d="M70 131.5L1025 131.5" fill="none" pointer-events="visible" stroke="#E0E6F1" class="zr3-cls-11"></path>
+<path d="M70 75.5L1025 75.5" fill="none" pointer-events="visible" stroke="#E0E6F1" class="zr3-cls-11"></path>
+<path d="M70 20.5L1025 20.5" fill="none" pointer-events="visible" stroke="#E0E6F1" class="zr3-cls-11"></path>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:12px;font-family:sans-serif;" xml:space="preserve" y="-6" transform="translate(70 5)" fill="#193b42">Net GEX ($M)</text>
+<path d="M70 242.5L1025 242.5" fill="none" pointer-events="visible" stroke="#6E7079" stroke-linecap="round" class="zr3-cls-11"></path>
+<path d="M70.5 242.4L70.5 247.4" fill="none" pointer-events="visible" stroke="#6E7079" class="zr3-cls-11"></path>
+<path d="M165.5 242.4L165.5 247.4" fill="none" pointer-events="visible" stroke="#6E7079" class="zr3-cls-11"></path>
+<path d="M261.5 242.4L261.5 247.4" fill="none" pointer-events="visible" stroke="#6E7079" class="zr3-cls-11"></path>
+<path d="M356.5 242.4L356.5 247.4" fill="none" pointer-events="visible" stroke="#6E7079" class="zr3-cls-11"></path>
+<path d="M452.5 242.4L452.5 247.4" fill="none" pointer-events="visible" stroke="#6E7079" class="zr3-cls-11"></path>
+<path d="M547.5 242.4L547.5 247.4" fill="none" pointer-events="visible" stroke="#6E7079" class="zr3-cls-11"></path>
+<path d="M643.5 242.4L643.5 247.4" fill="none" pointer-events="visible" stroke="#6E7079" class="zr3-cls-11"></path>
+<path d="M738.5 242.4L738.5 247.4" fill="none" pointer-events="visible" stroke="#6E7079" class="zr3-cls-11"></path>
+<path d="M834.5 242.4L834.5 247.4" fill="none" pointer-events="visible" stroke="#6E7079" class="zr3-cls-11"></path>
+<path d="M929.5 242.4L929.5 247.4" fill="none" pointer-events="visible" stroke="#6E7079" class="zr3-cls-11"></path>
+<path d="M1025.5 242.4L1025.5 247.4" fill="none" pointer-events="visible" stroke="#6E7079" class="zr3-cls-11"></path>
+<text dominant-baseline="central" text-anchor="end" style="font-size:12px;font-family:sans-serif;" transform="translate(62 298)" fill="#193b42">-1,000</text>
+<text dominant-baseline="central" text-anchor="end" style="font-size:12px;font-family:sans-serif;" transform="translate(62 242.4)" fill="#193b42">0</text>
+<text dominant-baseline="central" text-anchor="end" style="font-size:12px;font-family:sans-serif;" transform="translate(62 186.8)" fill="#193b42">1,000</text>
+<text dominant-baseline="central" text-anchor="end" style="font-size:12px;font-family:sans-serif;" transform="translate(62 131.2)" fill="#193b42">2,000</text>
+<text dominant-baseline="central" text-anchor="end" style="font-size:12px;font-family:sans-serif;" transform="translate(62 75.6)" fill="#193b42">3,000</text>
+<text dominant-baseline="central" text-anchor="end" style="font-size:12px;font-family:sans-serif;" transform="translate(62 20)" fill="#193b42">4,000</text>
+<text dominant-baseline="central" text-anchor="end" style="font-size:12px;font-family:sans-serif;" transform="matrix(0.819,-0.574,0.574,0.819,117.75,306)" fill="#193b42">SPY</text>
+<text dominant-baseline="central" text-anchor="end" style="font-size:12px;font-family:sans-serif;" transform="matrix(0.819,-0.574,0.574,0.819,213.25,306)" fill="#193b42">QQQ</text>
+<text dominant-baseline="central" text-anchor="end" style="font-size:12px;font-family:sans-serif;" transform="matrix(0.819,-0.574,0.574,0.819,308.75,306)" fill="#193b42">NBIS</text>
+<text dominant-baseline="central" text-anchor="end" style="font-size:12px;font-family:sans-serif;" transform="matrix(0.819,-0.574,0.574,0.819,404.25,306)" fill="#193b42">SPCX</text>
+<text dominant-baseline="central" text-anchor="end" style="font-size:12px;font-family:sans-serif;" transform="matrix(0.819,-0.574,0.574,0.819,499.75,306)" fill="#193b42">NVDA</text>
+<text dominant-baseline="central" text-anchor="end" style="font-size:12px;font-family:sans-serif;" transform="matrix(0.819,-0.574,0.574,0.819,595.25,306)" fill="#193b42">META</text>
+<text dominant-baseline="central" text-anchor="end" style="font-size:12px;font-family:sans-serif;" transform="matrix(0.819,-0.574,0.574,0.819,690.75,306)" fill="#193b42">CRWV</text>
+<text dominant-baseline="central" text-anchor="end" style="font-size:12px;font-family:sans-serif;" transform="matrix(0.819,-0.574,0.574,0.819,786.25,306)" fill="#193b42">IREN</text>
+<text dominant-baseline="central" text-anchor="end" style="font-size:12px;font-family:sans-serif;" transform="matrix(0.819,-0.574,0.574,0.819,881.75,306)" fill="#193b42">MU</text>
+<text dominant-baseline="central" text-anchor="end" style="font-size:12px;font-family:sans-serif;" transform="matrix(0.819,-0.574,0.574,0.819,977.25,306)" fill="#193b42">AMZN</text>
+<path d="M96.8 242.4l42 0l0 -194.7l-42 0Z" fill="#28634f" ecmeta_series_index="0" ecmeta_data_index="0" ecmeta_ssr_type="chart" class="zr3-cls-12"></path>
+<path d="M192.3 242.4l42 0l0 -88.1l-42 0Z" fill="#28634f" ecmeta_series_index="0" ecmeta_data_index="1" ecmeta_ssr_type="chart" class="zr3-cls-12"></path>
+<path d="M287.8 242.4l42 0l0 1.1l-42 0Z" fill="#b35342" ecmeta_series_index="0" ecmeta_data_index="2" ecmeta_ssr_type="chart" class="zr3-cls-13"></path>
+<path d="M383.3 242.4l42 0l0 -13.4l-42 0Z" fill="#28634f" ecmeta_series_index="0" ecmeta_data_index="3" ecmeta_ssr_type="chart" class="zr3-cls-12"></path>
+<path d="M478.8 242.4l42 0l0 -55l-42 0Z" fill="#28634f" ecmeta_series_index="0" ecmeta_data_index="4" ecmeta_ssr_type="chart" class="zr3-cls-12"></path>
+<path d="M574.3 242.4l42 0l0 1.8l-42 0Z" fill="#b35342" ecmeta_series_index="0" ecmeta_data_index="5" ecmeta_ssr_type="chart" class="zr3-cls-13"></path>
+<path d="M669.8 242.4l42 0l0 1.6l-42 0Z" fill="#b35342" ecmeta_series_index="0" ecmeta_data_index="6" ecmeta_ssr_type="chart" class="zr3-cls-13"></path>
+<path d="M765.3 242.4l42 0l0 0.2l-42 0Z" fill="#b35342" ecmeta_series_index="0" ecmeta_data_index="7" ecmeta_ssr_type="chart" class="zr3-cls-13"></path>
+<path d="M860.8 242.4l42 0l0 -11.2l-42 0Z" fill="#28634f" ecmeta_series_index="0" ecmeta_data_index="8" ecmeta_ssr_type="chart" class="zr3-cls-12"></path>
+<path d="M956.3 242.4l42 0l0 -27l-42 0Z" fill="#28634f" ecmeta_series_index="0" ecmeta_data_index="9" ecmeta_ssr_type="chart" class="zr3-cls-12"></path>
+<path d="M70 242.5L1025 242.5" fill="none" pointer-events="visible" stroke="#d4dfd7" stroke-dasharray="4,2" ecmeta_series_index="0" ecmeta_data_index="0" ecmeta_ssr_type="chart" ecmeta_silent="true" class="zr3-cls-11"></path>
+<text dominant-baseline="central" text-anchor="start" style="font-size:12px;font-family:sans-serif;" transform="translate(1030 242.4)" fill="#333" stroke="rgb(255,255,255)" stroke-width="2" paint-order="stroke" stroke-miterlimit="2">0</text>
+<style ><![CDATA[
+.zr3-cls-11:hover {
+pointer-events:none;
+}
+.zr3-cls-12:hover {
+cursor:pointer;
+fill:rgba(44,108,86,1);
+}
+.zr3-cls-13:hover {
+cursor:pointer;
+fill:rgba(196,91,72,1);
+}
+
+]]>
+
+</style>
+</svg></div></div><p>圖為原生模型 GEX；下表為獨立 options_flow 重取。原生 SPY +3,500.9M、QQQ +1,584.2M；獨立快照 +5,142.2M、+1,953.1M，不能混用。現貨基準仍是昨日收盤，且 SPY／QQQ 含已到期 10/21 合約，<strong>不將舊正 gamma 解讀為今天一定抑制跌勢</strong>。</p><div class="tw"><table class="shipped"><thead><tr><th>標的</th><th>Net GEX</th><th>累積變號位</th><th>計算現貨</th><th>Call/Put 最大 OI</th><th>|Gamma|前三履約價</th><th>快照時間</th><th>涵蓋到期日</th></tr></thead><tbody><tr><td>SPY</td><td>+5,142.2M</td><td>768.76</td><td>773.16</td><td>773 / 620</td><td>773, 774, 775</td><td>2026-10-21 20:50 UTC ／ 10-22 04:50 台灣 ／ 10-21 16:50 EDT</td><td>2026-10-21, 2026-10-22</td></tr><tr><td>QQQ</td><td>+1,953.1M</td><td>724.22</td><td>725.21</td><td>730 / 700</td><td>725, 726, 727</td><td>2026-10-21 20:50 UTC ／ 10-22 04:50 台灣 ／ 10-21 16:50 EDT</td><td>2026-10-21, 2026-10-22</td></tr><tr><td>IWM</td><td>+155.8M</td><td>280.03</td><td>276.46</td><td>280 / 267</td><td>280, 281, 278</td><td>2026-10-22 01:43 UTC ／ 10-22 09:43 台灣 ／ 10-21 21:43 EDT</td><td>2026-10-22, 2026-10-23, 2026-10-26</td></tr><tr><td>PEP</td><td>+28.4M</td><td>131.64</td><td>134.7</td><td>138 / 125</td><td>135, 138, 132</td><td>2026-10-21 23:00 UTC ／ 10-22 07:00 台灣 ／ 10-21 19:00 EDT</td><td>2026-10-23, 2026-10-30, 2026-11-06, 2026-11-13, 2026-11-20, 2026-11-27</td></tr><tr><td>LOW</td><td>+1.0M</td><td>219.1</td><td>196.55</td><td>240 / 170</td><td>200, 190, 170</td><td>2026-10-22 00:24 UTC ／ 10-22 08:24 台灣 ／ 10-21 20:24 EDT</td><td>2026-10-23, 2026-10-30, 2026-11-06, 2026-11-13, 2026-11-20, 2026-11-27, 2026-12-18, 2027-01-15, 2027-03-19, 2027-04-16, 2027-06-17, 2027-09-17</td></tr><tr><td>RSP</td><td>+57.3M</td><td>216.44</td><td>216.64</td><td>225 / 215</td><td>217.5, 225, 220</td><td>2026-10-21 23:00 UTC ／ 10-22 07:00 台灣 ／ 10-21 19:00 EDT</td><td>2026-10-23, 2026-10-30, 2026-11-06, 2026-11-13, 2026-11-20, 2026-11-27, 2026-12-18</td></tr><tr><td>UNH</td><td>+97.5M</td><td>408.78</td><td>417</td><td>450 / 350</td><td>410, 420, 430</td><td>2026-10-22 08:18 UTC ／ 10-22 16:18 台灣 ／ 10-22 04:18 EDT</td><td>2026-10-23, 2026-10-30, 2026-11-06, 2026-11-13, 2026-11-20</td></tr><tr><td>ZS</td><td>+14.5M</td><td>228.77</td><td>231.33</td><td>220 / 200</td><td>230, 235, 250</td><td>2026-10-22 13:11 UTC ／ 10-22 21:11 台灣 ／ 10-22 09:11 EDT</td><td>2026-10-23, 2026-10-30, 2026-11-06, 2026-11-13, 2026-11-20, 2026-11-27, 2026-12-04, 2026-12-18, 2027-01-15</td></tr></tbody></table></div><p>口徑：每 1% 現貨變動的美元 delta exposure。Call 正／Put 負為部位符號假設，無法辨認交易商真實淨部位。flip 是按履約價累積 GEX 變號的插值，並非重新定價現貨得到的 zero gamma。每檔僅 500 張合約記錄，有截斷風險；OI 非即時成交，不能推論主動買盤或機構淨買入。</p><h3>CFTC 週資料</h3><div class="tw"><table class="shipped"><thead><tr><th>市場</th><th>資產管理者淨部位（口）</th><th>槓桿基金淨部位（口）</th><th>槓桿基金週變化（口）</th></tr></thead><tbody><tr><td>UST 10Y NOTE</td><td>+2,898,562</td><td>-2,205,937</td><td>-66,152</td></tr><tr><td>S&amp;P 500 Consolidated</td><td>+918,097</td><td>-410,518</td><td>+5,392</td></tr><tr><td>NASDAQ-100 Consolidated</td><td>+76,402</td><td>-21,891</td><td>+4,848</td></tr><tr><td>RUSSELL E-MINI</td><td>+29,528</td><td>-91,647</td><td>+13,670</td></tr></tbody></table></div><p>本次重新呼叫回傳的報告日仍為 2026-10-13，前期 10-06。屬落後週資料，並非今天資金流；期貨空頭可能含避險。<a href="https://publicreporting.cftc.gov/Commitments-of-Traders/TFF-Futures-Only/gpe5-46if">CFTC TFF Futures Only 官方資料</a>。與昨日鏈快照、今日盤前價格的時間尺度不同，僅用作背景。</p></section><section id="s5"><h2>5. Stock Rotation</h2><hr class="rule"><div class="chart-panel"><div id="rotationChart" class="plot tall" role="img" aria-label="rotationChart，資料與解讀見同章表格"><svg width="1060" height="480" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" baseProfile="full" viewBox="0 0 1060 480">
+<rect width="1060" height="480" x="0" y="0" fill="#fff"></rect>
+<path d="M64 428.5L1030 428.5" fill="none" pointer-events="visible" stroke="#E0E6F1" class="zr1-cls-3"></path>
+<path d="M64 347.5L1030 347.5" fill="none" pointer-events="visible" stroke="#E0E6F1" class="zr1-cls-3"></path>
+<path d="M64 267.5L1030 267.5" fill="none" pointer-events="visible" stroke="#E0E6F1" class="zr1-cls-3"></path>
+<path d="M64 186.5L1030 186.5" fill="none" pointer-events="visible" stroke="#E0E6F1" class="zr1-cls-3"></path>
+<path d="M64 105.5L1030 105.5" fill="none" pointer-events="visible" stroke="#E0E6F1" class="zr1-cls-3"></path>
+<path d="M64 25.5L1030 25.5" fill="none" pointer-events="visible" stroke="#E0E6F1" class="zr1-cls-3"></path>
+<path d="M64.5 25L64.5 428" fill="none" pointer-events="visible" stroke="#E0E6F1" class="zr1-cls-3"></path>
+<path d="M305.5 25L305.5 428" fill="none" pointer-events="visible" stroke="#E0E6F1" class="zr1-cls-3"></path>
+<path d="M547.5 25L547.5 428" fill="none" pointer-events="visible" stroke="#E0E6F1" class="zr1-cls-3"></path>
+<path d="M788.5 25L788.5 428" fill="none" pointer-events="visible" stroke="#E0E6F1" class="zr1-cls-3"></path>
+<path d="M1030.5 25L1030.5 428" fill="none" pointer-events="visible" stroke="#E0E6F1" class="zr1-cls-3"></path>
+<path d="M547.5 428L547.5 25" fill="none" pointer-events="visible" stroke="#6E7079" stroke-linecap="round" class="zr1-cls-3"></path>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:12px;font-family:sans-serif;" xml:space="preserve" y="-6" transform="matrix(0,-1,1,0,20,226.5)" fill="#193b42">新觸發密度 (%)</text>
+<path d="M64 428.5L1030 428.5" fill="none" pointer-events="visible" stroke="#6E7079" stroke-linecap="round" class="zr1-cls-3"></path>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:12px;font-family:sans-serif;" y="6" transform="translate(547 458)" fill="#193b42">趨勢強度</text>
+<path d="M547 428.5L542 428.5" fill="none" pointer-events="visible" stroke="#6E7079" class="zr1-cls-3"></path>
+<path d="M547 347.5L542 347.5" fill="none" pointer-events="visible" stroke="#6E7079" class="zr1-cls-3"></path>
+<path d="M547 267.5L542 267.5" fill="none" pointer-events="visible" stroke="#6E7079" class="zr1-cls-3"></path>
+<path d="M547 186.5L542 186.5" fill="none" pointer-events="visible" stroke="#6E7079" class="zr1-cls-3"></path>
+<path d="M547 105.5L542 105.5" fill="none" pointer-events="visible" stroke="#6E7079" class="zr1-cls-3"></path>
+<path d="M547 25.5L542 25.5" fill="none" pointer-events="visible" stroke="#6E7079" class="zr1-cls-3"></path>
+<path d="M64.5 428L64.5 433" fill="none" pointer-events="visible" stroke="#6E7079" class="zr1-cls-3"></path>
+<path d="M305.5 428L305.5 433" fill="none" pointer-events="visible" stroke="#6E7079" class="zr1-cls-3"></path>
+<path d="M547.5 428L547.5 433" fill="none" pointer-events="visible" stroke="#6E7079" class="zr1-cls-3"></path>
+<path d="M788.5 428L788.5 433" fill="none" pointer-events="visible" stroke="#6E7079" class="zr1-cls-3"></path>
+<path d="M1030.5 428L1030.5 433" fill="none" pointer-events="visible" stroke="#6E7079" class="zr1-cls-3"></path>
+<text dominant-baseline="central" text-anchor="end" style="font-size:12px;font-family:sans-serif;" transform="translate(56 428)" fill="#193b42">0</text>
+<text dominant-baseline="central" text-anchor="end" style="font-size:12px;font-family:sans-serif;" transform="translate(56 347.4)" fill="#193b42">20</text>
+<text dominant-baseline="central" text-anchor="end" style="font-size:12px;font-family:sans-serif;" transform="translate(56 266.8)" fill="#193b42">40</text>
+<text dominant-baseline="central" text-anchor="end" style="font-size:12px;font-family:sans-serif;" transform="translate(56 186.2)" fill="#193b42">60</text>
+<text dominant-baseline="central" text-anchor="end" style="font-size:12px;font-family:sans-serif;" transform="translate(56 105.6)" fill="#193b42">80</text>
+<text dominant-baseline="central" text-anchor="end" style="font-size:12px;font-family:sans-serif;" transform="translate(56 25)" fill="#193b42">100</text>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:12px;font-family:sans-serif;" y="6" transform="translate(64 436)" fill="#193b42">-100</text>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:12px;font-family:sans-serif;" y="6" transform="translate(305.5 436)" fill="#193b42">-50</text>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:12px;font-family:sans-serif;" y="6" transform="translate(547 436)" fill="#193b42">0</text>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:12px;font-family:sans-serif;" y="6" transform="translate(788.5 436)" fill="#193b42">50</text>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:12px;font-family:sans-serif;" y="6" transform="translate(1030 436)" fill="#193b42">100</text>
+<path d="M1 0A1 1 0 1 1 1 -0.01" transform="matrix(16.729,0,0,16.729,822.793,255.113)" fill="#28634f" fill-opacity="0.85" ecmeta_series_index="0" ecmeta_data_index="0" ecmeta_ssr_type="chart" class="zr1-cls-4"></path>
+<path d="M1 0A1 1 0 1 1 1 -0.01" transform="matrix(20.087,0,0,20.087,766.765,354.654)" fill="#829087" fill-opacity="0.85" ecmeta_series_index="0" ecmeta_data_index="1" ecmeta_ssr_type="chart" class="zr1-cls-5"></path>
+<path d="M1 0A1 1 0 1 1 1 -0.01" transform="matrix(20.192,0,0,20.192,716.05,317.175)" fill="#829087" fill-opacity="0.85" ecmeta_series_index="0" ecmeta_data_index="2" ecmeta_ssr_type="chart" class="zr1-cls-5"></path>
+<path d="M1 0A1 1 0 1 1 1 -0.01" transform="matrix(17.452,0,0,17.452,600.613,428)" fill="#829087" fill-opacity="0.85" ecmeta_series_index="0" ecmeta_data_index="3" ecmeta_ssr_type="chart" class="zr1-cls-5"></path>
+<path d="M1 0A1 1 0 1 1 1 -0.01" transform="matrix(18.02,0,0,18.02,590.953,299.846)" fill="#829087" fill-opacity="0.85" ecmeta_series_index="0" ecmeta_data_index="4" ecmeta_ssr_type="chart" class="zr1-cls-5"></path>
+<path d="M1 0A1 1 0 1 1 1 -0.01" transform="matrix(17.526,0,0,17.526,547,367.55)" fill="#829087" fill-opacity="0.85" ecmeta_series_index="0" ecmeta_data_index="5" ecmeta_ssr_type="chart" class="zr1-cls-5"></path>
+<path d="M1 0A1 1 0 1 1 1 -0.01" transform="matrix(19.591,0,0,19.591,512.707,384.879)" fill="#b35342" fill-opacity="0.85" ecmeta_series_index="0" ecmeta_data_index="6" ecmeta_ssr_type="chart" class="zr1-cls-6"></path>
+<path d="M1 0A1 1 0 1 1 1 -0.01" transform="matrix(14.654,0,0,14.654,486.625,327.25)" fill="#b35342" fill-opacity="0.85" ecmeta_series_index="0" ecmeta_data_index="7" ecmeta_ssr_type="chart" class="zr1-cls-6"></path>
+<path d="M1 0A1 1 0 1 1 1 -0.01" transform="matrix(18.599,0,0,18.599,450.4,331.28)" fill="#b35342" fill-opacity="0.85" ecmeta_series_index="0" ecmeta_data_index="8" ecmeta_ssr_type="chart" class="zr1-cls-6"></path>
+<path d="M1 0A1 1 0 1 1 1 -0.01" transform="matrix(21.49,0,0,21.49,450.4,387.7)" fill="#b35342" fill-opacity="0.85" ecmeta_series_index="0" ecmeta_data_index="9" ecmeta_ssr_type="chart" class="zr1-cls-6"></path>
+<path d="M1 0A1 1 0 1 1 1 -0.01" transform="matrix(10.188,0,0,10.188,450.4,387.7)" fill="#b35342" fill-opacity="0.85" ecmeta_series_index="0" ecmeta_data_index="10" ecmeta_ssr_type="chart" class="zr1-cls-6"></path>
+<path d="M1 0A1 1 0 1 1 1 -0.01" transform="matrix(15.94,0,0,15.94,321.439,428)" fill="#b35342" fill-opacity="0.85" ecmeta_series_index="0" ecmeta_data_index="11" ecmeta_ssr_type="chart" class="zr1-cls-6"></path>
+<path d="M1 0A1 1 0 1 1 1 -0.01" transform="matrix(21.735,0,0,21.735,295.84,411.88)" fill="#b35342" fill-opacity="0.85" ecmeta_series_index="0" ecmeta_data_index="12" ecmeta_ssr_type="chart" class="zr1-cls-6"></path>
+<path d="M1 0A1 1 0 1 1 1 -0.01" transform="matrix(20.636,0,0,20.636,151.906,428)" fill="#b35342" fill-opacity="0.85" ecmeta_series_index="0" ecmeta_data_index="13" ecmeta_ssr_type="chart" class="zr1-cls-6"></path>
+<path d="M1 0A1 1 0 1 1 1 -0.01" transform="matrix(18.023,0,0,18.023,117.613,428)" fill="#b35342" fill-opacity="0.85" ecmeta_series_index="0" ecmeta_data_index="14" ecmeta_ssr_type="chart" class="zr1-cls-6"></path>
+<path d="M1 0A1 1 0 1 1 1 -0.01" transform="matrix(20.961,0,0,20.961,64,428)" fill="#b35342" fill-opacity="0.85" ecmeta_series_index="0" ecmeta_data_index="15" ecmeta_ssr_type="chart" class="zr1-cls-6"></path>
+<path d="M1 0A1 1 0 1 1 1 -0.01" transform="matrix(18.458,0,0,18.458,64,428)" fill="#b35342" fill-opacity="0.85" ecmeta_series_index="0" ecmeta_data_index="16" ecmeta_ssr_type="chart" class="zr1-cls-6"></path>
+<path d="M1 0A1 1 0 1 1 1 -0.01" transform="matrix(17.062,0,0,17.062,64,428)" fill="#b35342" fill-opacity="0.85" ecmeta_series_index="0" ecmeta_data_index="17" ecmeta_ssr_type="chart" class="zr1-cls-6"></path>
+<path d="M1 0A1 1 0 1 1 1 -0.01" transform="matrix(17.715,0,0,17.715,64,428)" fill="#b35342" fill-opacity="0.85" ecmeta_series_index="0" ecmeta_data_index="18" ecmeta_ssr_type="chart" class="zr1-cls-6"></path>
+<path d="M1 0A1 1 0 1 1 1 -0.01" transform="matrix(17.174,0,0,17.174,64,428)" fill="#b35342" fill-opacity="0.85" ecmeta_series_index="0" ecmeta_data_index="19" ecmeta_ssr_type="chart" class="zr1-cls-6"></path>
+<path d="M1 0A1 1 0 1 1 1 -0.01" transform="matrix(12.172,0,0,12.172,64,428)" fill="#b35342" fill-opacity="0.85" ecmeta_series_index="0" ecmeta_data_index="20" ecmeta_ssr_type="chart" class="zr1-cls-6"></path>
+<path d="M1 0A1 1 0 1 1 1 -0.01" transform="matrix(11.308,0,0,11.308,64,428)" fill="#b35342" fill-opacity="0.85" ecmeta_series_index="0" ecmeta_data_index="21" ecmeta_ssr_type="chart" class="zr1-cls-6"></path>
+<path d="M547.5 428L547.5 25" fill="none" pointer-events="visible" stroke="#28634f" stroke-dasharray="4,2" ecmeta_series_index="0" ecmeta_data_index="0" ecmeta_ssr_type="chart" ecmeta_silent="true" class="zr1-cls-3"></path>
+<path d="M64 267.5L1030 267.5" fill="none" pointer-events="visible" stroke="#28634f" stroke-dasharray="4,2" ecmeta_series_index="0" ecmeta_data_index="1" ecmeta_ssr_type="chart" ecmeta_silent="true" class="zr1-cls-3"></path>
+<style ><![CDATA[
+.zr1-cls-3:hover {
+pointer-events:none;
+}
+.zr1-cls-4:hover {
+cursor:pointer;
+fill:rgba(44,108,86,1);
+}
+.zr1-cls-5:hover {
+cursor:pointer;
+fill:rgba(143,158,148,1);
+}
+.zr1-cls-6:hover {
+cursor:pointer;
+fill:rgba(196,91,72,1);
+}
+
+]]>
+
+</style>
+</svg></div></div><div class="tw"><table class="shipped"><thead><tr><th>群組</th><th>趨勢強度</th><th>新觸發 %</th><th>美元成交量 B</th></tr></thead><tbody><tr><td>FINTECH</td><td>57.1</td><td>42.9</td><td>6.14</td></tr><tr><td>ENTERPRISE SOFTWARE &amp; CYBERSECURITY</td><td>45.5</td><td>18.2</td><td>22.28</td></tr><tr><td>HEALTHCARE &amp; BIOTECH</td><td>35</td><td>27.5</td><td>23.2</td></tr><tr><td>CRYPTO &amp; DIGITAL ASSETS</td><td>11.1</td><td>0</td><td>8.1</td></tr><tr><td>GAMING &amp; DIGITAL MEDIA</td><td>9.1</td><td>31.8</td><td>10.08</td></tr><tr><td>DEFENSE &amp; DRONES</td><td>0</td><td>15</td><td>8.34</td></tr><tr><td>ROBOTICS &amp; INDUSTRIAL AUTOMATION</td><td>-7.1</td><td>10.7</td><td>18.42</td></tr><tr><td>CHINA TECH</td><td>-12.5</td><td>25</td><td>2.77</td></tr><tr><td>POWER &amp; GRID</td><td>-20</td><td>24</td><td>12.58</td></tr><tr><td>AI PLATFORMS &amp; INTERNET</td><td>-20</td><td>10</td><td>38.16</td></tr><tr><td>SPORTS BETTING</td><td>-20</td><td>10</td><td>0.5</td></tr><tr><td>METALS &amp; MINING</td><td>-46.7</td><td>0</td><td>4.54</td></tr><tr><td>AI COMPUTE &amp; SEMIS</td><td>-52</td><td>4</td><td>41.93</td></tr><tr><td>SPACE &amp; eVTOL</td><td>-81.8</td><td>0</td><td>27.5</td></tr><tr><td>AI CLOUD &amp; DATA CENTERS</td><td>-88.9</td><td>0</td><td>10.09</td></tr><tr><td>MEMORY &amp; STORAGE</td><td>-100</td><td>0</td><td>31.15</td></tr><tr><td>NETWORKING &amp; INTERCONNECT</td><td>-100</td><td>0</td><td>11.92</td></tr><tr><td>OPTICAL NETWORKING &amp; PHOTONICS</td><td>-100</td><td>0</td><td>6.98</td></tr><tr><td>SEMI EQUIPMENT</td><td>-100</td><td>0</td><td>8.96</td></tr><tr><td>AI SERVERS &amp; HARDWARE</td><td>-100</td><td>0</td><td>7.28</td></tr><tr><td>NUCLEAR &amp; SMR</td><td>-100</td><td>0</td><td>1.07</td></tr><tr><td>QUANTUM</td><td>-100</td><td>0</td><td>0.77</td></tr></tbody></table></div><p>原生趨勢強度＝CE 多頭比例 × 200 − 100；泡泡為追蹤群組成交額，不是淨流入。Fintech、企業軟體、醫療較強，半導體設備 −100。獨立 report_sector_rotation 的分數口徑不同且可低於 −100，未拿來套用原生座標。這是追蹤樣本，不是全市場板塊普查。</p></section><section id="s6"><h2>6. Swing Trade Recommendations｜五檔條件式候選</h2><hr class="rule"><div class="tw"><table class="shipped"><thead><tr><th>順序</th><th>Ticker</th><th>日線收盤</th><th>盤前</th><th>盤前 %</th><th>Cycle</th><th>EMA5/20/40</th><th>EMA200</th><th>RSI14</th><th>ATR</th><th>CE線</th><th>MACD 柱 短/中/長</th></tr></thead><tbody><tr><td>1</td><td>PEP</td><td>134.7</td><td>136.55</td><td>+1.37%</td><td>Bull Entry</td><td>132.71 / 130.35 / 132.05</td><td>141.78</td><td>61.24</td><td>2.68</td><td>130.13</td><td>2.4438 / 3.2712 / 0.8274</td></tr><tr><td>2</td><td>RSP</td><td>216.64</td><td>215.8785</td><td>-0.35%</td><td>Bull Entry</td><td>215.07 / 213.41 / 213.8</td><td>207.2</td><td>60.32</td><td>1.97</td><td>213.08</td><td>1.1542 / 1.6266 / 0.4724</td></tr><tr><td>3</td><td>UNH</td><td>417</td><td>422.01</td><td>+1.20%</td><td>Uptrend</td><td>409.33 / 391.79 / 389.91</td><td>376.51</td><td>69.05</td><td>11.75</td><td>398.9</td><td>8.5737 / 12.6451 / 4.0714</td></tr><tr><td>4</td><td>LOW</td><td>196.56</td><td>197</td><td>+0.22%</td><td>Bull Entry</td><td>195.67 / 191.88 / 195.01</td><td>218.22</td><td>55.93</td><td>4.65</td><td>191.96</td><td>3.15 / 4.7187 / 1.5687</td></tr><tr><td>5</td><td>ZS</td><td>231.33</td><td>230.99</td><td>-0.15%</td><td>Uptrend</td><td>220.56 / 212.32 / 201</td><td>184.08</td><td>63.66</td><td>11.08</td><td>215.07</td><td>-0.6831 / -0.6495 / 0.0336</td></tr></tbody></table></div><div class="tw"><table class="shipped"><thead><tr><th>代號</th><th>依據</th><th>待觀察點位（不是掛單）</th><th>支撐／失效參考</th><th>已知壓力</th><th>研究持有期</th></tr></thead><tbody><tr><td>PEP</td><td>短線防禦相對強；C6 新轉多，但仍低於 EMA200。</td><td>135.48 回測守穩，再看 138</td><td>133.14／130.13</td><td>138／141.71</td><td>確認後 2–10 交易日；每日複核</td></tr><tr><td>RSP</td><td>等權重市場代理；C6、長線多頭，須大盤止跌。</td><td>217.02 收復後回測</td><td>215.75／213.08</td><td>220.28</td><td>確認後 2–10 交易日；每日複核</td></tr><tr><td>UNH</td><td>C1 與長線多頭；盤前相對強，但 RSI 接近 70。</td><td>422.40 放量站穩後回測</td><td>415.00／398.90</td><td>上方目標尚未核實</td><td>確認後 2–10 交易日；每日複核</td></tr><tr><td>LOW</td><td>C6 反彈；年線下方且盤前僅 472 股，可信度低。</td><td>198.00 收復後回測</td><td>194.43／191.96</td><td>201.27／205.48</td><td>確認後 2–10 交易日；每日複核</td></tr><tr><td>ZS</td><td>C1、CE 昨日翻多；昨日 +7.84%，短中 MACD 柱仍負，不追。</td><td>232.06 確認；優先等回測</td><td>220.56 EMA5／215.07</td><td>237.22</td><td>確認後 2–10 交易日；每日複核</td></tr></tbody></table></div><p>所有技術指標截至 10/21 日線，C1=Uptrend、C6=Bull Entry 直接取工具正式名稱。三組 MACD 參數為 5/20/9、5/40/9、20/40/9。模型 signal 的 entry、pnl、stillHolding 是歷史訊號狀態，不是你的持倉或績效。</p><h3>否決試算：不可掛單</h3><div class="tw"><table class="shipped"><thead><tr><th>代號</th><th>假設突破參考</th><th>技術停損參考</th><th>已知目標</th><th>未扣費 R 倍數</th><th>判斷</th></tr></thead><tbody><tr><td>PEP</td><td>135.48</td><td>133.14</td><td>138</td><td>1.08</td><td>盤前已 136.55，距目標更近；不追</td></tr><tr><td>RSP</td><td>217.02</td><td>213.08</td><td>220.28</td><td>0.83</td><td>不足 2R</td></tr><tr><td>UNH</td><td>422.4</td><td>398.9</td><td>未核實</td><td>無法計算</td><td>無可靠上方目標</td></tr><tr><td>LOW</td><td>198</td><td>194.43</td><td>201.27</td><td>0.92</td><td>不足 2R，盤前量太少</td></tr><tr><td>ZS</td><td>232.06</td><td>215.07</td><td>237.22</td><td>0.30</td><td>不足 2R，漲後不追</td></tr></tbody></table></div><p>以上只是結構價位的毛報酬風險比，尚未扣佣金、價差與滑價；扣費後更低。未設定可送出的最高限價、股數或資金占用，因目前全數未通過門檻。不要為了湊到五筆交易而縮窄停損或拉遠目標。AXP 因隔日財報淘汰；NBIS／CRWV 因 CE 空頭與高波動淘汰；AMZN 因盤前偏弱且 10/29 財報暫緩。</p><h3>原生 finalTrades：保留原始輸出，未確認</h3><div class="tw"><table class="shipped"><thead><tr><th>Ticker</th><th>原生確認條件</th><th>原生停損</th><th>原生目標</th><th>本次處理</th></tr></thead><tbody><tr><td>AXP</td><td>&gt;323.61，且站上當日 VWAP、RVOL ≥1.2</td><td>313.21</td><td>327.5 / 330</td><td>AXP 財報排除</td></tr><tr><td>PEP</td><td>&gt;134.7，且站上當日 VWAP、RVOL ≥1.2</td><td>130.13</td><td>135 / 138</td><td>盤前已變動，重新估算，不照單掛單</td></tr><tr><td>LOW</td><td>&gt;196.56，且站上當日 VWAP、RVOL ≥1.2</td><td>191.96</td><td>200 / 202.5</td><td>盤前已變動，重新估算，不照單掛單</td></tr></tbody></table></div><div class="chart-panel"><div id="rankChart" class="plot" role="img" aria-label="rankChart，資料與解讀見同章表格"><svg width="1060" height="460" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" baseProfile="full" viewBox="0 0 1060 460">
+<rect width="1060" height="460" x="0" y="0" fill="#fff"></rect>
+<path d="M70.5 20L70.5 425" fill="none" pointer-events="visible" stroke="#E0E6F1" class="zr0-cls-0"></path>
+<path d="M207.5 20L207.5 425" fill="none" pointer-events="visible" stroke="#E0E6F1" class="zr0-cls-0"></path>
+<path d="M344.5 20L344.5 425" fill="none" pointer-events="visible" stroke="#E0E6F1" class="zr0-cls-0"></path>
+<path d="M481.5 20L481.5 425" fill="none" pointer-events="visible" stroke="#E0E6F1" class="zr0-cls-0"></path>
+<path d="M618.5 20L618.5 425" fill="none" pointer-events="visible" stroke="#E0E6F1" class="zr0-cls-0"></path>
+<path d="M755.5 20L755.5 425" fill="none" pointer-events="visible" stroke="#E0E6F1" class="zr0-cls-0"></path>
+<path d="M893.5 20L893.5 425" fill="none" pointer-events="visible" stroke="#E0E6F1" class="zr0-cls-0"></path>
+<path d="M1030.5 20L1030.5 425" fill="none" pointer-events="visible" stroke="#E0E6F1" class="zr0-cls-0"></path>
+<path d="M70.5 20L70.5 425" fill="none" pointer-events="visible" stroke="#6E7079" stroke-linecap="round" class="zr0-cls-0"></path>
+<text dominant-baseline="central" text-anchor="start" style="font-size:12px;font-family:sans-serif;" xml:space="preserve" transform="translate(1045 425)" fill="#193b42">relative score</text>
+<path d="M70 20.5L65 20.5" fill="none" pointer-events="visible" stroke="#6E7079" class="zr0-cls-0"></path>
+<path d="M70 60.5L65 60.5" fill="none" pointer-events="visible" stroke="#6E7079" class="zr0-cls-0"></path>
+<path d="M70 101.5L65 101.5" fill="none" pointer-events="visible" stroke="#6E7079" class="zr0-cls-0"></path>
+<path d="M70 141.5L65 141.5" fill="none" pointer-events="visible" stroke="#6E7079" class="zr0-cls-0"></path>
+<path d="M70 182.5L65 182.5" fill="none" pointer-events="visible" stroke="#6E7079" class="zr0-cls-0"></path>
+<path d="M70 222.5L65 222.5" fill="none" pointer-events="visible" stroke="#6E7079" class="zr0-cls-0"></path>
+<path d="M70 263.5L65 263.5" fill="none" pointer-events="visible" stroke="#6E7079" class="zr0-cls-0"></path>
+<path d="M70 303.5L65 303.5" fill="none" pointer-events="visible" stroke="#6E7079" class="zr0-cls-0"></path>
+<path d="M70 344.5L65 344.5" fill="none" pointer-events="visible" stroke="#6E7079" class="zr0-cls-0"></path>
+<path d="M70 384.5L65 384.5" fill="none" pointer-events="visible" stroke="#6E7079" class="zr0-cls-0"></path>
+<path d="M70 425.5L65 425.5" fill="none" pointer-events="visible" stroke="#6E7079" class="zr0-cls-0"></path>
+<text dominant-baseline="central" text-anchor="end" style="font-size:12px;font-family:sans-serif;" transform="translate(62 40.25)" fill="#193b42">NBIS</text>
+<text dominant-baseline="central" text-anchor="end" style="font-size:12px;font-family:sans-serif;" transform="translate(62 80.75)" fill="#193b42">AXP</text>
+<text dominant-baseline="central" text-anchor="end" style="font-size:12px;font-family:sans-serif;" transform="translate(62 121.25)" fill="#193b42">CRWV</text>
+<text dominant-baseline="central" text-anchor="end" style="font-size:12px;font-family:sans-serif;" transform="translate(62 161.75)" fill="#193b42">PEP</text>
+<text dominant-baseline="central" text-anchor="end" style="font-size:12px;font-family:sans-serif;" transform="translate(62 202.25)" fill="#193b42">SPCX</text>
+<text dominant-baseline="central" text-anchor="end" style="font-size:12px;font-family:sans-serif;" transform="translate(62 242.75)" fill="#193b42">IREN</text>
+<text dominant-baseline="central" text-anchor="end" style="font-size:12px;font-family:sans-serif;" transform="translate(62 283.25)" fill="#193b42">META</text>
+<text dominant-baseline="central" text-anchor="end" style="font-size:12px;font-family:sans-serif;" transform="translate(62 323.75)" fill="#193b42">LOW</text>
+<text dominant-baseline="central" text-anchor="end" style="font-size:12px;font-family:sans-serif;" transform="translate(62 364.25)" fill="#193b42">AMZN</text>
+<text dominant-baseline="central" text-anchor="end" style="font-size:12px;font-family:sans-serif;" transform="translate(62 404.75)" fill="#193b42">RSP</text>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:12px;font-family:sans-serif;" y="6" transform="translate(70 433)" fill="#193b42">0</text>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:12px;font-family:sans-serif;" y="6" transform="translate(207.1429 433)" fill="#193b42">10</text>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:12px;font-family:sans-serif;" y="6" transform="translate(344.2857 433)" fill="#193b42">20</text>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:12px;font-family:sans-serif;" y="6" transform="translate(481.4286 433)" fill="#193b42">30</text>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:12px;font-family:sans-serif;" y="6" transform="translate(618.5714 433)" fill="#193b42">40</text>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:12px;font-family:sans-serif;" y="6" transform="translate(755.7143 433)" fill="#193b42">50</text>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:12px;font-family:sans-serif;" y="6" transform="translate(892.8571 433)" fill="#193b42">60</text>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:12px;font-family:sans-serif;" y="6" transform="translate(1030 433)" fill="#193b42">70</text>
+<path d="M70 29.3l844.8 0l0 22l-844.8 0Z" fill="#829087" ecmeta_series_index="0" ecmeta_data_index="0" ecmeta_ssr_type="chart" class="zr0-cls-1"></path>
+<path d="M70 69.8l798.2 0l0 22l-798.2 0Z" fill="#28634f" ecmeta_series_index="0" ecmeta_data_index="1" ecmeta_ssr_type="chart" class="zr0-cls-2"></path>
+<path d="M70 110.3l787.2 0l0 22l-787.2 0Z" fill="#829087" ecmeta_series_index="0" ecmeta_data_index="2" ecmeta_ssr_type="chart" class="zr0-cls-1"></path>
+<path d="M70 150.8l780.3 0l0 22l-780.3 0Z" fill="#28634f" ecmeta_series_index="0" ecmeta_data_index="3" ecmeta_ssr_type="chart" class="zr0-cls-2"></path>
+<path d="M70 191.3l776.2 0l0 22l-776.2 0Z" fill="#829087" ecmeta_series_index="0" ecmeta_data_index="4" ecmeta_ssr_type="chart" class="zr0-cls-1"></path>
+<path d="M70 231.8l731 0l0 22l-731 0Z" fill="#829087" ecmeta_series_index="0" ecmeta_data_index="5" ecmeta_ssr_type="chart" class="zr0-cls-1"></path>
+<path d="M70 272.3l700.8 0l0 22l-700.8 0Z" fill="#829087" ecmeta_series_index="0" ecmeta_data_index="6" ecmeta_ssr_type="chart" class="zr0-cls-1"></path>
+<path d="M70 312.8l670.6 0l0 22l-670.6 0Z" fill="#28634f" ecmeta_series_index="0" ecmeta_data_index="7" ecmeta_ssr_type="chart" class="zr0-cls-2"></path>
+<path d="M70 353.3l661 0l0 22l-661 0Z" fill="#28634f" ecmeta_series_index="0" ecmeta_data_index="8" ecmeta_ssr_type="chart" class="zr0-cls-2"></path>
+<path d="M70 393.8l654.2 0l0 22l-654.2 0Z" fill="#28634f" ecmeta_series_index="0" ecmeta_data_index="9" ecmeta_ssr_type="chart" class="zr0-cls-2"></path>
+<text dominant-baseline="central" text-anchor="start" style="font-size:11px;font-family:sans-serif;" transform="translate(919.8 40.25)" fill="#829087">CORE</text>
+<text dominant-baseline="central" text-anchor="start" style="font-size:11px;font-family:sans-serif;" transform="translate(873.1714 80.75)" fill="#829087">STRIKE</text>
+<text dominant-baseline="central" text-anchor="start" style="font-size:11px;font-family:sans-serif;" transform="translate(862.2 121.25)" fill="#829087">CORE</text>
+<text dominant-baseline="central" text-anchor="start" style="font-size:11px;font-family:sans-serif;" transform="translate(855.3429 161.75)" fill="#829087">STRIKE</text>
+<text dominant-baseline="central" text-anchor="start" style="font-size:11px;font-family:sans-serif;" transform="translate(851.2286 202.25)" fill="#829087">CORE</text>
+<text dominant-baseline="central" text-anchor="start" style="font-size:11px;font-family:sans-serif;" transform="translate(805.9714 242.75)" fill="#829087">CORE</text>
+<text dominant-baseline="central" text-anchor="start" style="font-size:11px;font-family:sans-serif;" transform="translate(775.8 283.25)" fill="#829087">CORE</text>
+<text dominant-baseline="central" text-anchor="start" style="font-size:11px;font-family:sans-serif;" transform="translate(745.6286 323.75)" fill="#829087">STRIKE</text>
+<text dominant-baseline="central" text-anchor="start" style="font-size:11px;font-family:sans-serif;" transform="translate(736.0286 364.25)" fill="#829087">STRIKE</text>
+<text dominant-baseline="central" text-anchor="start" style="font-size:11px;font-family:sans-serif;" transform="translate(729.1714 404.75)" fill="#829087">STRIKE</text>
+<style ><![CDATA[
+.zr0-cls-0:hover {
+pointer-events:none;
+}
+.zr0-cls-1:hover {
+cursor:pointer;
+fill:rgba(143,158,148,1);
+}
+.zr0-cls-2:hover {
+cursor:pointer;
+fill:rgba(44,108,86,1);
+}
+
+]]>
+
+</style>
+</svg></div></div><div class="tw"><table class="shipped"><thead><tr><th>原生名次</th><th>Ticker</th><th>模式</th><th>分數</th><th>訊號</th><th>決策（原生文字）</th></tr></thead><tbody><tr><td>1</td><td>NBIS</td><td>CORE</td><td>61.6</td><td>Downtrend / CE bearish</td><td>成熟趨勢，不追</td></tr><tr><td>2</td><td>AXP</td><td>STRIKE</td><td>58.2</td><td>Bull Entry / CE bullish</td><td>確認後可做</td></tr><tr><td>3</td><td>CRWV</td><td>CORE</td><td>57.4</td><td>Downtrend / CE bearish</td><td>成熟趨勢，不追</td></tr><tr><td>4</td><td>PEP</td><td>STRIKE</td><td>56.9</td><td>Bull Entry / CE bullish</td><td>確認後可做</td></tr><tr><td>5</td><td>SPCX</td><td>CORE</td><td>56.6</td><td>Bull End / CE bullish</td><td>成熟趨勢，不追</td></tr><tr><td>6</td><td>IREN</td><td>CORE</td><td>53.3</td><td>Downtrend / CE bearish</td><td>成熟趨勢，不追</td></tr><tr><td>7</td><td>META</td><td>CORE</td><td>51.1</td><td>Bull End / CE bearish</td><td>成熟趨勢，不追</td></tr><tr><td>8</td><td>LOW</td><td>STRIKE</td><td>48.9</td><td>Bull Entry / CE bullish</td><td>確認後可做</td></tr><tr><td>9</td><td>AMZN</td><td>STRIKE</td><td>48.2</td><td>Uptrend / CE bullish</td><td>確認後可做</td></tr><tr><td>10</td><td>RSP</td><td>STRIKE</td><td>47.7</td><td>Bull Entry / CE bullish</td><td>確認後可做</td></tr></tbody></table></div><details><summary>完整原生非 CORE 觀察名單（昨日訊號；點開核對）</summary><div class="tw"><table class="shipped"><thead><tr><th>#</th><th>Ticker</th><th>模式</th><th>分數</th><th>Cycle</th><th>RVOL</th><th>相對昨日VWAP %</th><th>社群提及 / 作者</th></tr></thead><tbody><tr><td>2</td><td>AXP</td><td>STRIKE</td><td>58.2</td><td>Bull Entry</td><td>0.83</td><td>0.08</td><td>1 / 1</td></tr><tr><td>4</td><td>PEP</td><td>STRIKE</td><td>56.9</td><td>Bull Entry</td><td>0.89</td><td>0.11</td><td>1 / 1</td></tr><tr><td>8</td><td>LOW</td><td>STRIKE</td><td>48.9</td><td>Bull Entry</td><td>0.82</td><td>0.24</td><td>1 / 1</td></tr><tr><td>9</td><td>AMZN</td><td>STRIKE</td><td>48.2</td><td>Uptrend</td><td>0.85</td><td>0.16</td><td>23 / 16</td></tr><tr><td>10</td><td>RSP</td><td>STRIKE</td><td>47.7</td><td>Bull Entry</td><td>0.95</td><td>0.09</td><td>1 / 1</td></tr><tr><td>12</td><td>DIA</td><td>STRIKE</td><td>46.3</td><td>Bull Entry</td><td>0.75</td><td>0.35</td><td>1 / 1</td></tr><tr><td>14</td><td>IBM</td><td>STRIKE</td><td>45.9</td><td>Bull Entry</td><td>1.56</td><td>1.89</td><td>4 / 2</td></tr><tr><td>26</td><td>WULF</td><td>STRIKE_WATCH</td><td>42.9</td><td>Downtrend</td><td>1.22</td><td>0.14</td><td>6 / 5</td></tr><tr><td>36</td><td>ASST</td><td>STRIKE_WATCH</td><td>40.8</td><td>Uptrend</td><td>1.7</td><td>2.75</td><td>7 / 2</td></tr><tr><td>50</td><td>MSTR</td><td>STRIKE_WATCH</td><td>39.2</td><td>Bull End</td><td>1.17</td><td>1.16</td><td>6 / 5</td></tr><tr><td>70</td><td>TSLA</td><td>STRIKE_WATCH</td><td>37.3</td><td>Uptrend</td><td>1.23</td><td>0.11</td><td>17 / 8</td></tr><tr><td>80</td><td>CRL</td><td>STRIKE_WATCH</td><td>36.6</td><td>Uptrend</td><td>2.79</td><td>1.3</td><td>1 / 1</td></tr><tr><td>87</td><td>BMNR</td><td>STRIKE_WATCH</td><td>35.8</td><td>Bear Entry</td><td>1.13</td><td>0.06</td><td>4 / 1</td></tr><tr><td>89</td><td>INOD</td><td>STRIKE_WATCH</td><td>35.7</td><td>Downtrend</td><td>0.79</td><td>2.02</td><td>4 / 2</td></tr><tr><td>92</td><td>CBRE</td><td>STRIKE_WATCH</td><td>35.5</td><td>Bear End</td><td>1.48</td><td>0.35</td><td>1 / 1</td></tr><tr><td>102</td><td>BTC</td><td>STRIKE_WATCH</td><td>34.9</td><td>Uptrend</td><td>1.34</td><td>0.2</td><td>5 / 4</td></tr><tr><td>113</td><td>MSFT</td><td>STRIKE_WATCH</td><td>33.6</td><td>Uptrend</td><td>0.64</td><td>0.37</td><td>19 / 9</td></tr><tr><td>118</td><td>NOW</td><td>STRIKE_WATCH</td><td>33.5</td><td>Uptrend</td><td>1.22</td><td>0.28</td><td>1 / 1</td></tr><tr><td>119</td><td>PLTR</td><td>STRIKE_WATCH</td><td>33.4</td><td>Uptrend</td><td>0.92</td><td>1.55</td><td>5 / 2</td></tr><tr><td>122</td><td>LMT</td><td>STRIKE_WATCH</td><td>33.2</td><td>Bull Entry</td><td>1.28</td><td>0.45</td><td>3 / 2</td></tr><tr><td>126</td><td>TSM</td><td>STRIKE_WATCH</td><td>32.6</td><td>Bear Entry</td><td>0.98</td><td>0.61</td><td>5 / 3</td></tr><tr><td>127</td><td>NXPI</td><td>STRIKE_WATCH</td><td>32.6</td><td>Bull Entry</td><td>0.99</td><td>0.61</td><td>2 / 2</td></tr><tr><td>129</td><td>DDOG</td><td>STRIKE_WATCH</td><td>32.5</td><td>Uptrend</td><td>1</td><td>0.08</td><td>1 / 1</td></tr><tr><td>137</td><td>SPY</td><td>STRIKE_WATCH</td><td>31.7</td><td>Bull End</td><td>0.76</td><td>0.13</td><td>14 / 7</td></tr><tr><td>139</td><td>PATH</td><td>STRIKE_WATCH</td><td>31.6</td><td>Bear End</td><td>0.78</td><td>0.08</td><td>2 / 2</td></tr><tr><td>154</td><td>AAPL</td><td>STRIKE_WATCH</td><td>30.5</td><td>Uptrend</td><td>0.96</td><td>0.31</td><td>7 / 5</td></tr><tr><td>162</td><td>ETH</td><td>STRIKE_WATCH</td><td>29.7</td><td>Bear Entry</td><td>1.08</td><td>0.03</td><td>2 / 2</td></tr><tr><td>163</td><td>USO</td><td>STRIKE_WATCH</td><td>29.7</td><td>Uptrend</td><td>1.08</td><td>0.39</td><td>1 / 1</td></tr><tr><td>164</td><td>XOM</td><td>STRIKE_WATCH</td><td>29.6</td><td>Uptrend</td><td>0.97</td><td>0.21</td><td>1 / 1</td></tr><tr><td>165</td><td>DPZ</td><td>STRIKE_WATCH</td><td>29.5</td><td>Bear End</td><td>0.73</td><td>0.24</td><td>1 / 1</td></tr><tr><td>166</td><td>OR</td><td>STRIKE_WATCH</td><td>29.5</td><td>Downtrend</td><td>0.74</td><td>0.53</td><td>1 / 1</td></tr><tr><td>169</td><td>V</td><td>STRIKE_WATCH</td><td>28.6</td><td>Uptrend</td><td>0.92</td><td>0.02</td><td>1 / 1</td></tr><tr><td>170</td><td>MA</td><td>STRIKE_WATCH</td><td>28.5</td><td>Uptrend</td><td>0.92</td><td>0.07</td><td>1 / 1</td></tr><tr><td>172</td><td>PFE</td><td>STRIKE_WATCH</td><td>27.4</td><td>Uptrend</td><td>0.73</td><td>0.02</td><td>1 / 1</td></tr><tr><td>173</td><td>MCD</td><td>STRIKE_WATCH</td><td>27</td><td>Bear End</td><td>0.69</td><td>0.31</td><td>2 / 1</td></tr><tr><td>175</td><td>VOO</td><td>STRIKE_WATCH</td><td>26.8</td><td>Bull End</td><td>0.93</td><td>0.17</td><td>1 / 1</td></tr><tr><td>176</td><td>TLT</td><td>STRIKE_WATCH</td><td>25.2</td><td>Bear End</td><td>0.71</td><td>0.02</td><td>2 / 2</td></tr><tr><td>178</td><td>STRC</td><td>STRIKE_WATCH</td><td>23.7</td><td>Bull End</td><td>0.82</td><td>0.06</td><td>1 / 1</td></tr></tbody></table></div></details><p>分數不是勝率；原生 STRIKE 的 VWAP 判斷屬資料 session，不能當作今天開盤後已確認。原生 CORE 的「成熟趨勢」文案不代表多頭，必須另看 CE。</p></section><section id="s7"><h2>7. Earnings Calendar｜2026-10-22 至 10-29</h2><hr class="rule"><div class="tw"><table class="shipped"><thead><tr><th>日期（美東）</th><th>Ticker</th><th>EPS 預估</th><th>營收預估 B</th><th>時段與可信度</th></tr></thead><tbody><tr><td>2026-10-23</td><td>AXP</td><td>4.5</td><td>20.12</td><td>AXP 法說 08:30 EDT／20:30 台灣；公布確切時刻未核實</td></tr><tr><td>2026-10-26</td><td>AMKR</td><td>0.772</td><td>2.027</td><td>時段未知；P1 日期／市場預估，非實際公布</td></tr><tr><td>2026-10-26</td><td>CLS</td><td>2.94</td><td>5.373</td><td>時段未知；P1 日期／市場預估，非實際公布</td></tr><tr><td>2026-10-27</td><td>PYPL</td><td>1.31</td><td>8.714</td><td>時段未知；P1 日期／市場預估，非實際公布</td></tr><tr><td>2026-10-27</td><td>HOOD</td><td>0.558</td><td>1.437</td><td>時段未知；P1 日期／市場預估，非實際公布</td></tr><tr><td>2026-10-27</td><td>TER</td><td>2.08</td><td>1.26</td><td>時段未知；P1 日期／市場預估，非實際公布</td></tr><tr><td>2026-10-28</td><td>MSFT</td><td>4.71</td><td>90.62</td><td>時段未知；P1 日期／市場預估，非實際公布</td></tr><tr><td>2026-10-28</td><td>NOW</td><td>1.02</td><td>4.094</td><td>時段未知；P1 日期／市場預估，非實際公布</td></tr><tr><td>2026-10-29</td><td>AMZN</td><td>1.96</td><td>202.164</td><td>時段未知；P1 日期／市場預估，非實際公布</td></tr><tr><td>2026-10-29</td><td>GILD</td><td>2.18</td><td>7.791</td><td>時段未知；P1 日期／市場預估，非實際公布</td></tr></tbody></table></div><div class="tw"><table class="shipped"><thead><tr><th>候選</th><th>事件核對</th><th>限制</th></tr></thead><tbody><tr><td>PEP</td><td>官方 10/08 已公布第三季</td><td>此窗口 P1 無事件</td></tr><tr><td>UNH</td><td>官方 10/13 已公布第三季</td><td>此窗口 P1 無事件</td></tr><tr><td>LOW</td><td>官方暫定 11/18 09:00 EST／22:00 台灣</td><td>暫定，仍可變更</td></tr><tr><td>ZS</td><td>P1 預估 11/24；官方未核實日期</td><td>不得當作已確認財報日</td></tr><tr><td>RSP</td><td>ETF 本身無個股式季報事件</td><td>仍承受成分股財報風險</td></tr></tbody></table></div><p>廣泛 earnings_calendar 返回的 60 筆樣本集中於中國公司，不能宣稱是完整美股日曆；上表改用 15 檔指定美股查詢。空結果不保證不存在事件。</p><p><a href="https://www.pepsico.com/en/newsroom/press-releases/2026/pepsico-announces-timing-and-availability-of-third-quarter-2026-financial-results">PEP 官方</a> · <a href="https://www.unitedhealthgroup.com/newsroom/2026/2026-10-13-uhg-reports-third-quarter-2026-results.html">UNH 官方</a> · <a href="https://corporate.lowes.com/investors/news-events/events-presentations">LOW 官方暫定行事曆</a> · <a href="https://ir.americanexpress.com/events/event-details/2026/Q3-2026-American-Express-Earnings-Conference-Call/default.aspx">AXP 10/23 官方法說</a> · <a href="https://ir.zscaler.com/">ZS IR，待核對新公告</a>。</p></section><section id="s8"><h2>8. 最終 Trading Plan</h2><hr class="rule"><p><strong>現在不要交易。五檔是有條件候選；目前零檔通過完整執行門檻。</strong></p><div class="tw"><table class="shipped"><thead><tr><th>操作建議</th><th>重新評估條件</th><th>取消條件</th></tr></thead><tbody><tr><td>1｜PEP 優先觀察</td><td>等 135.48 一帶有可確認回測與合理停損，再評估 138 壓力</td><td>直接追 136.55 或報酬風險不足，取消</td></tr><tr><td>2｜RSP 看市場修復</td><td>指數同時止跌、217.02 收復；重新取得上方壓力</td><td>QQQ 持續破低或市場廣度不配合</td></tr><tr><td>3｜UNH 看延續</td><td>422.40 站穩後，先核實更高目標與回測結構</td><td>目標無法查證或 RSI 過熱仍追價</td></tr><tr><td>4｜LOW 等流動性；ZS 等回測</td><td>LOW 正常盤量與價差恢復；ZS 不追昨日長紅</td><td>盤前少量成交、跳空超過 1 ATR 或回測破壞</td></tr><tr><td>5｜保留現金與資料重驗</td><td>最早 21:45 台灣／09:45 EDT，核對完整15分鐘K線、當日VWAP、量能及事件</td><td>未確認就不送單；本計畫收盤失效，不自動沿用翌日</td></tr></tbody></table></div><p>共通門檻：SPY／QQQ 與個股趨勢配合、站在當日 VWAP 上方、完整 15 分鐘收盤突破後才考慮。P1 日線 bars 的 vwap 不能取代今天盤中 VWAP，須手動在券商或 TradingView 確認；一般 stop order 不會自動判斷 K 線收盤條件。</p><p>本次不套用舊帳戶金額或配置比例。若之後形成合格方案，先由結構／ATR 決定停損，再按當時明確風險額及已交割現金向下取整股數；費率、價差與滑價須在券商預覽核對，不能假設零佣金。停損可有跳空與成交偏差，不能保證損失上限。</p><p>不攤平、不因五檔清單而買滿。候選 ≠ 已觸發 ≠ 已成交。只有你回報實際成交時間、股數、價格與費用後，才有實際績效；本次未連接券商執行交易，也不持續自動盯盤。</p><h3>資料稽核</h3><div class="tw"><table class="shipped"><thead><tr><th>來源</th><th>本次實際取得</th><th>as-of／限制</th></tr></thead><tbody><tr><td>P1 quote / cycle / bars / watchlist</td><td>已重新查詢</td><td>10/21 日線／收盤；非今日盤中</td></tr><tr><td>P1 原生交易報告</td><td>179 檔排名，完整輸出</td><td>10/22 13:08 UTC 生成，資料 session 10/21</td></tr><tr><td>TV 盤前</td><td>10 個符號批次</td><td>本報告標頭時間；供應端延遲未知</td></tr><tr><td>options_flow / sector_rotation / social_feed</td><td>均已重新查詢</td><td>各章列窗口與口徑，不是成交資金流</td></tr><tr><td>CFTC</td><td>重新查詢</td><td>仍回傳 10/13 週資料</td></tr><tr><td>earnings_calendar</td><td>廣泛＋指定標的</td><td>廣泛樣本失真；官方交叉核對限已列來源</td></tr></tbody></table></div></section><footer><p><a href="https://mcp.p1gpt.com/view/fc6a1ab11e4130beae4affa49cbd7e2f.html">P1 原生互動圖表版（產生後保留 7 日）</a> · 本下載檔的圖表已內嵌，可離線閱讀。</p><p>公開版本只含市場研究，不含帳戶資料、憑證或私人清單內容。僅供研究與風險規劃，不保證獲利。</p></footer></div></body></html>
